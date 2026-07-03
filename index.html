@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>毛毛心理測驗所</title>
+  <meta name="description" content="超好玩的心理測驗入口站,快來測測看,再分享給朋友!">
+  <meta property="og:title" content="毛毛心理測驗所">
+  <meta property="og:description" content="超好玩的心理測驗,快來測測看你是哪種貓咪!">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9451009899963713"
+     crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #F6EEE3;
+      --bg-deep: #EFE2D0;
+      --card: #FFFDF8;
+      --milk-tea: #C9A87C;
+      --milk-tea-dark: #A9855C;
+      --cocoa: #6B5138;
+      --cocoa-light: #93795C;
+      --accent: #E8A87C;
+      --radius: 20px;
+      --shadow: 0 6px 20px rgba(107, 81, 56, 0.12);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+      background: var(--bg);
+      background-image:
+        radial-gradient(circle at 20% 15%, rgba(232, 168, 124, 0.10) 0 120px, transparent 120px),
+        radial-gradient(circle at 85% 70%, rgba(201, 168, 124, 0.12) 0 160px, transparent 160px);
+      color: var(--cocoa);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    .page {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 24px 20px 48px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .site-header { text-align: center; padding: 24px 0; }
+    .site-logo { width: 110px; margin: 0 auto 10px; animation: bob 3s ease-in-out infinite; }
+    .site-logo svg { width: 100%; height: auto; display: block; }
+    .site-title { font-size: 1.9rem; letter-spacing: 0.05em; }
+    .site-subtitle { color: var(--cocoa-light); font-size: 1rem; margin-top: 6px; }
+
+    .quiz-list { display: flex; flex-direction: column; gap: 16px; flex: 1; }
+    .section-label { font-size: 0.9rem; color: var(--milk-tea-dark); font-weight: 700; margin: 8px 4px 0; }
+
+    .quiz-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      text-decoration: none;
+      color: inherit;
+      border: 2px solid transparent;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+      animation: rise 0.5s ease both;
+    }
+    .quiz-card:active { transform: scale(0.97); border-color: var(--milk-tea); }
+    .quiz-card-art { width: 72px; flex-shrink: 0; }
+    .quiz-card-art svg { width: 100%; height: auto; display: block; }
+    .quiz-card-body { flex: 1; min-width: 0; }
+    .quiz-card-title { font-size: 1.2rem; font-weight: 700; }
+    .quiz-card-desc { font-size: 0.9rem; color: var(--cocoa-light); margin-top: 2px; }
+    .quiz-card-meta { font-size: 0.8rem; color: var(--milk-tea-dark); margin-top: 6px; }
+    .quiz-card-go {
+      flex-shrink: 0;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .site-footer { text-align: center; color: var(--cocoa-light); font-size: 0.85rem; padding-top: 32px; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="site-header">
+      <div class="site-logo" id="site-logo" aria-hidden="true"></div>
+      <h1 class="site-title">毛毛心理測驗所</h1>
+      <p class="site-subtitle">測一下,更懂自己一點點 🐾</p>
+    </header>
+
+    <section class="quiz-list" aria-label="測驗列表">
+      <div class="section-label">🐾 熱門測驗</div>
+      <a class="quiz-card" href="/cat-quiz/">
+        <div class="quiz-card-art" id="cat-art"></div>
+        <div class="quiz-card-body">
+          <div class="quiz-card-title">你是哪種貓咪?</div>
+          <div class="quiz-card-desc">12 題測出你的貓咪人格,還有你的好朋友與相剋組合!</div>
+          <div class="quiz-card-meta">共 12 題・約 2 分鐘</div>
+        </div>
+        <div class="quiz-card-go">開始</div>
+      </a>
+    </section>
+
+    <footer class="site-footer">
+      <p>更多測驗陸續登場,做完記得分享給朋友一起玩!</p>
+    </footer>
+  </main>
+
+  <script>
+    // 內嵌的貓咪 SVG(和 cat-quiz 同一款橘貓)
+    function catSVG(art) {
+      var inner = "#F2B8A8";
+      var ears =
+        '<path d="M40 62 L30 12.6 L82 34 Z" fill="' + art.base + '"/>' +
+        '<path d="M160 62 L170 12.6 L118 34 Z" fill="' + art.base + '"/>' +
+        '<path d="M46 56 L40 26 L74 40 Z" fill="' + inner + '"/>' +
+        '<path d="M154 56 L160 26 L126 40 Z" fill="' + inner + '"/>';
+      var stripes =
+        '<rect x="88" y="40" width="9" height="26" rx="4.5" fill="' + art.p1 + '"/>' +
+        '<rect x="103" y="40" width="9" height="26" rx="4.5" fill="' + art.p1 + '"/>' +
+        '<rect x="73" y="46" width="9" height="20" rx="4.5" fill="' + art.p1 + '" opacity="0.7"/>' +
+        '<rect x="118" y="46" width="9" height="20" rx="4.5" fill="' + art.p1 + '" opacity="0.7"/>';
+      return (
+        '<svg viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg" role="img">' +
+        '<defs><clipPath id="cc"><ellipse cx="100" cy="98" rx="72" ry="64"/></clipPath></defs>' +
+        ears +
+        '<ellipse cx="100" cy="98" rx="72" ry="64" fill="' + art.base + '"/>' +
+        '<g clip-path="url(#cc)">' + stripes + '</g>' +
+        '<ellipse cx="74" cy="92" rx="9" ry="11" fill="' + art.eye + '"/>' +
+        '<ellipse cx="126" cy="92" rx="9" ry="11" fill="' + art.eye + '"/>' +
+        '<circle cx="77" cy="88" r="3" fill="#fff"/>' +
+        '<circle cx="129" cy="88" r="3" fill="#fff"/>' +
+        '<ellipse cx="58" cy="112" rx="10" ry="6" fill="#F2B8A8" opacity="0.55"/>' +
+        '<ellipse cx="142" cy="112" rx="10" ry="6" fill="#F2B8A8" opacity="0.55"/>' +
+        '<path d="M94 108 L106 108 L100 116 Z" fill="#E08B75"/>' +
+        '<path d="M100 116 Q100 124 90 124 M100 116 Q100 124 110 124" stroke="#8A6A4D" stroke-width="2.5" fill="none" stroke-linecap="round"/>' +
+        '<path d="M40 104 L14 100 M40 112 L16 116" stroke="#B99B78" stroke-width="2.5" stroke-linecap="round"/>' +
+        '<path d="M160 104 L186 100 M160 112 L184 116" stroke="#B99B78" stroke-width="2.5" stroke-linecap="round"/>' +
+        '</svg>'
+      );
+    }
+    var orange = { base: "#F6A94A", p1: "#E08A2E", eye: "#5B4632" };
+    document.getElementById("site-logo").innerHTML = catSVG(orange);
+    document.getElementById("cat-art").innerHTML = catSVG(orange);
+  </script>
+</body>
+</html>
