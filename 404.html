@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>找不到這一頁|毛毛心理測驗所</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="screen" style="text-align:center;">
+      <div class="start-art" id="lost-cat" aria-hidden="true"></div>
+      <h1 class="quiz-title">喵?這裡什麼都沒有</h1>
+      <p class="quiz-desc">你要找的頁面可能搬家了,或是網址打錯了一個字。</p>
+      <a class="btn btn-primary btn-big" href="/">回首頁</a>
+      <a class="btn btn-ghost" href="/quizzes/">看看所有測驗</a>
+    </section>
+  </main>
+  <script src="/js/cat-art.js"></script>
+  <script>
+    document.getElementById("lost-cat").innerHTML = catSVG({ base: "#9FB4C7", ear: "normal", pattern: "none", eye: "#5B8A5B" }, "lost");
+  </script>
+</body>
+</html>

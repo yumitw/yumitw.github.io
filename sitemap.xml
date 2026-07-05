@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 上線前用 tools/set-domain.ps1 換掉網域;新增頁面時記得同步維護這份清單 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://DOMAIN_PLACEHOLDER/</loc></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/quizzes/</loc></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/quizzes/cat-personality/</loc></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/results/orange-cat/</loc></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/articles/</loc></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/articles/how-quiz-scoring-works/</loc></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/about/</loc></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/contact/</loc></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/privacy/</loc></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/disclaimer/</loc></url>
+</urlset>

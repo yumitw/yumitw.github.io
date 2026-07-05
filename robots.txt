@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /quizzes/cat-personality/play/
+
+Sitemap: https://DOMAIN_PLACEHOLDER/sitemap.xml
