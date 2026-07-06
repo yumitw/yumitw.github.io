@@ -16,7 +16,7 @@
 | 決策 | 結論 |
 |---|---|
 | 架構 | cat-quiz 併入 yumitw.github.io 單一 repo;舊 `/cat-quiz/` 留轉址頁 |
-| 網域 | 購買自訂網域後才上線送審(全站網址用 `DOMAIN_PLACEHOLDER`,以 `tools/set-domain.ps1` 一次替換) |
+| 網域 | **2026-07-07 變更**:先用既有 `yumitw.github.io`(免費、免等 DNS 生效)上線讓真人試用,不等買新網域。全站 `DOMAIN_PLACEHOLDER` 已替換為 `https://yumitw.github.io`,**未**產生 CNAME 檔(user-site repo 用預設網域不需要)。之後若買了自訂網域,再跑 `tools/set-domain.ps1 -Domain "新網域"` 覆蓋一次即可,那時才需要 CNAME。 |
 | 內容產出 | 先做範本(1 結果頁 + 1 文章)給站長審,風格確認後再產其餘 11 結果頁與文章 |
 | 新測驗 | 這一輪加 1 個:「你是哪種狗狗?」(草案待審) |
 
@@ -98,11 +98,13 @@ russian→russian-blue, tuxedo→tuxedo-cat
 7. ✅ 文章 ↔ 結果頁雙向內部連結(58 處品種連結 + 22 頁延伸閱讀)
 8. ✅ sitemap.xml 補 lastmod 與 image sitemap 擴充
 9. ⬜ 圖片 Tier 1/2/3:狗狗結果頁 10 張、文章圖 6 張(站長生成中)
-10. ⬜ 網域購買 → set-domain → DNS → push 上線
-11. ⬜ 舊 cat-quiz repo 轉址頁(等網域定案後產生)
-12. ⬜ Search Console 驗證 + 提交 sitemap
-13. ⬜ (選)GA4 取代/並行 StatCounter,追蹤 quiz_start / quiz_complete / result_share
-14. ⬜ 索引確認後重新送審 AdSense
+10. ✅ **2026-07-07 決定先不買新網域**,改用既有 `yumitw.github.io` 上線(DOMAIN_PLACEHOLDER 已替換、未產生 CNAME);career-path 的 7 個課程 CTA 暫時換成「準備中」文字,避免死連結
+11. ⬜ push `revamp` → `main`,讓 yumitw.github.io 正式更新(目前 main 還是舊版單頁,revamp 領先 9 個 commit)
+12. ⬜ 舊 cat-quiz repo(獨立 repo,原本 `/cat-quiz/` 路徑)轉址頁,保住已分享出去的舊連結
+13. ⬜ Search Console 驗證 + 提交 sitemap
+14. ⬜ (選)GA4 取代/並行 StatCounter,追蹤 quiz_start / quiz_complete / result_share
+15. ⬜ 拿到課程連結後換回 career-path 的 7 個 CTA 按鈕
+16. ⬜ 索引確認後重新送審 AdSense(若之後改買自訂網域,要等新網域重新索引穩定才送審)
 
 ## 架構強化紀錄(meta-kit)
 
@@ -141,7 +143,7 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - [x] 端對端重測:12 題(含微調後題目)作答 → 正確導向結果頁 → fallback emoji、星等、優勢/盲點/毛毛小結皆正常顯示
 
 **待辦(卡在使用者)**:
-- [ ] **提供 7 個領域各自的實際課程連結網址**,取代目前的 `COURSE_LINK_PLACEHOLDER__<slug>` 佔位(slug:ai-data/web-dev/product-design/digital-marketing/commercial-design/multimedia/automation),CTA 按鈕才能真正導流
+- [ ] **提供 7 個領域各自的實際課程連結網址**——2026-07-07 上線前先把 7 個結果頁的 CTA 按鈕暫時換成「🚧 課程連結準備中」文字(避免真人點到 `COURSE_LINK_PLACEHOLDER__<slug>` 死連結),等拿到真連結後我再把按鈕換回來
 - [ ] (選)7 隻動物插畫,規格見 `docs/content-kit/image-manifest.md` Tier 5 —— 圖沒放也不影響上線,fallback 會自動處理
 
 ## 第 4 個測驗:「你的隱藏財富引擎是什麼?」(2026-07-07 已上線)
@@ -159,8 +161,10 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - [x] robots.txt 加 `Disallow: /quizzes/wealth-engine/play/`;sitemap.xml 補 9 個新網址;首頁/測驗總覽新增「💰 財富人格測驗」獨立分區 + 首頁 8 人格 chip 預覽
 - [x] 圖片:ART_DIRECTION.md 規劃的插畫尚未產出,比照 career 測驗前例先用 emoji 直接當 result-art(非 fallback 機制),og:image 用全站 `/images/og-default.png`;待站長依 ART_DIRECTION.md 產出 9~18 張插畫後,再切換成 `<img>` + emoji fallback
 
+**已完成(續)**:
+- [x] 本機瀏覽器端對端測試:20 題作答 → 正確導向 wealth-squirrel、帶 `secondary=P8` → 雙核心組合區塊正確顯示「穩健資產家 × 實體經營家」;直接訪問結果頁(無 query string)時橫幅與組合區塊皆正確隱藏;確認貓測驗共用的 `js/play.js` 行為未受影響(無 regression)
+
 **待辦**:
-- [ ] 本機瀏覽器端對端測試:20 題作答 → 正確導向結果頁 → 雙核心組合、分享、再測一次皆正常顯示
 - [ ] (可選,卡在使用者)依 `Passive income/ART_DIRECTION.md` 產出首頁 hero + 8 人格插畫,之後我可以接上 `<img>` + emoji fallback
 
 ## 追蹤碼現況

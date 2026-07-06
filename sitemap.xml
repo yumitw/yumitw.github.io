@@ -4,161 +4,161 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/</loc>
+    <loc>https://yumitw.github.io/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/og/home-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/og/home-og.png</image:loc></image:image>
   </url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/quizzes/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/quizzes/</loc><lastmod>2026-07-07</lastmod></url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/quizzes/cat-personality/</loc>
+    <loc>https://yumitw.github.io/quizzes/cat-personality/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/quizzes/cat-personality-og.png</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://DOMAIN_PLACEHOLDER/quizzes/dog-personality/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/quizzes/dog-personality-og.png</image:loc></image:image>
-  </url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/quizzes/career-path/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/quizzes/wealth-engine/</loc><lastmod>2026-07-07</lastmod></url>
-  <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/orange-cat/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/orange-cat-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/quizzes/cat-personality-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/black-cat/</loc>
+    <loc>https://yumitw.github.io/quizzes/dog-personality/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/black-cat-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/quizzes/dog-personality-og.png</image:loc></image:image>
+  </url>
+  <url><loc>https://yumitw.github.io/quizzes/career-path/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/quizzes/wealth-engine/</loc><lastmod>2026-07-07</lastmod></url>
+  <url>
+    <loc>https://yumitw.github.io/results/orange-cat/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/orange-cat-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/calico-cat/</loc>
+    <loc>https://yumitw.github.io/results/black-cat/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/calico-cat-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/black-cat-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/ragdoll-cat/</loc>
+    <loc>https://yumitw.github.io/results/calico-cat/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/ragdoll-cat-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/calico-cat-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/siamese-cat/</loc>
+    <loc>https://yumitw.github.io/results/ragdoll-cat/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/siamese-cat-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/ragdoll-cat-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/american-shorthair/</loc>
+    <loc>https://yumitw.github.io/results/siamese-cat/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/american-shorthair-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/siamese-cat-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/persian-cat/</loc>
+    <loc>https://yumitw.github.io/results/american-shorthair/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/persian-cat-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/american-shorthair-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/scottish-fold/</loc>
+    <loc>https://yumitw.github.io/results/persian-cat/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/scottish-fold-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/persian-cat-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/sphynx-cat/</loc>
+    <loc>https://yumitw.github.io/results/scottish-fold/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/sphynx-cat-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/scottish-fold-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/maine-coon/</loc>
+    <loc>https://yumitw.github.io/results/sphynx-cat/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/maine-coon-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/sphynx-cat-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/russian-blue/</loc>
+    <loc>https://yumitw.github.io/results/maine-coon/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/russian-blue-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/maine-coon-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/tuxedo-cat/</loc>
+    <loc>https://yumitw.github.io/results/russian-blue/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/tuxedo-cat-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/russian-blue-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/shiba-inu/</loc>
+    <loc>https://yumitw.github.io/results/tuxedo-cat/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/shiba-inu-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/tuxedo-cat-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/husky/</loc>
+    <loc>https://yumitw.github.io/results/shiba-inu/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/husky-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/shiba-inu-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/golden-retriever/</loc>
+    <loc>https://yumitw.github.io/results/husky/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/golden-retriever-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/husky-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/corgi/</loc>
+    <loc>https://yumitw.github.io/results/golden-retriever/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/corgi-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/golden-retriever-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/poodle/</loc>
+    <loc>https://yumitw.github.io/results/corgi/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/poodle-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/corgi-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/french-bulldog/</loc>
+    <loc>https://yumitw.github.io/results/poodle/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/french-bulldog-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/poodle-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/border-collie/</loc>
+    <loc>https://yumitw.github.io/results/french-bulldog/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/border-collie-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/french-bulldog-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/chihuahua/</loc>
+    <loc>https://yumitw.github.io/results/border-collie/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/chihuahua-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/border-collie-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/dachshund/</loc>
+    <loc>https://yumitw.github.io/results/chihuahua/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/dachshund-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/chihuahua-og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/results/mix-breed/</loc>
+    <loc>https://yumitw.github.io/results/dachshund/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/results/mix-breed-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/dachshund-og.png</image:loc></image:image>
   </url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-ai-data/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-web-dev/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-product-design/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-digital-marketing/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-commercial-design/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-multimedia/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-automation/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/wealth-squirrel/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/wealth-beaver/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/wealth-owl/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/wealth-peacock/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/wealth-bee/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/wealth-ant/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/wealth-flamingo/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/results/wealth-turtle/</loc><lastmod>2026-07-07</lastmod></url>
   <url>
-    <loc>https://DOMAIN_PLACEHOLDER/articles/</loc>
+    <loc>https://yumitw.github.io/results/mix-breed/</loc>
     <lastmod>2026-07-07</lastmod>
-    <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/og/articles-og.png</image:loc></image:image>
+    <image:image><image:loc>https://yumitw.github.io/images/results/mix-breed-og.png</image:loc></image:image>
   </url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/articles/cat-personality-types-guide/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/articles/dog-personality-types-guide/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/articles/cat-dog-personality-difference/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/articles/cat-quiz-friend-pairing/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/articles/dog-social-style-guide/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/articles/how-quiz-scoring-works/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/about/</loc><lastmod>2026-07-06</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/contact/</loc><lastmod>2026-07-06</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/privacy/</loc><lastmod>2026-07-06</lastmod></url>
-  <url><loc>https://DOMAIN_PLACEHOLDER/disclaimer/</loc><lastmod>2026-07-06</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/career-ai-data/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/career-web-dev/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/career-product-design/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/career-digital-marketing/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/career-commercial-design/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/career-multimedia/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/career-automation/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/wealth-squirrel/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/wealth-beaver/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/wealth-owl/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/wealth-peacock/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/wealth-bee/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/wealth-ant/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/wealth-flamingo/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/results/wealth-turtle/</loc><lastmod>2026-07-07</lastmod></url>
+  <url>
+    <loc>https://yumitw.github.io/articles/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/og/articles-og.png</image:loc></image:image>
+  </url>
+  <url><loc>https://yumitw.github.io/articles/cat-personality-types-guide/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/articles/dog-personality-types-guide/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/articles/cat-dog-personality-difference/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/articles/cat-quiz-friend-pairing/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/articles/dog-social-style-guide/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/articles/how-quiz-scoring-works/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://yumitw.github.io/about/</loc><lastmod>2026-07-06</lastmod></url>
+  <url><loc>https://yumitw.github.io/contact/</loc><lastmod>2026-07-06</lastmod></url>
+  <url><loc>https://yumitw.github.io/privacy/</loc><lastmod>2026-07-06</lastmod></url>
+  <url><loc>https://yumitw.github.io/disclaimer/</loc><lastmod>2026-07-06</lastmod></url>
 </urlset>
