@@ -119,6 +119,15 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - **結果頁 → 文章**:22 個結果頁的「其他人格」清單下方新增「📚 延伸閱讀」區塊,貓頁連回 `cat-personality-types-guide` + `cat-quiz-friend-pairing`,狗頁連回 `dog-personality-types-guide` + `dog-social-style-guide`。
 - 腳本:`link_and_enrich.py`(已跑過,冪等 — 已有「延伸閱讀」的頁面會跳過);若之後新增文章想比照辦理,邏輯可重用。
 
+## 貓狗結果頁插畫橫幅(2026-07-07)
+
+站長發現貓狗結果頁上原本只有小小的 SVG 圖示(`dogSVG()`/`catSVG()` 產生),沒有用到已經做好的 22 張精緻插畫(那批圖之前只接在 `og:image` 做社群分享用)。修正:
+- 新增 `.result-hero`(CSS),22 個結果頁的 `.result-art` 上方插入 `<img src="/images/results/<slug>-og.png">`,與 og 圖共用同一張,橫幅式滿版顯示、貼齊卡片圓角。
+- 原本的 SVG 產生邏輯保留,改成 `onerror` fallback(圖片萬一失效才會顯示),不是直接砍掉。
+- 腳本:`add_result_hero.py`(冪等,已有 `.result-hero` 的頁面會跳過)。
+- 已用瀏覽器實測貓、狗各一頁:圖片正確載入(natural width 1200px)、fallback SVG 正確保持隱藏、稽核零新增壞連結。
+- **此變更已 commit,尚未推上 GitHub**,等站長確認要不要上線。
+
 ## 第 3 個測驗:「你適合學什麼?」(2026-07-07 已上線)
 
 **性質與前兩個測驗不同**:這不是娛樂性人格測驗,是導購型性向測驗——測出使用者適合 7 大領域(人工智慧與資料分析、網站開發、產品設計/UIUX、數位行銷、商用設計與插畫、網紅多媒體、AI 高效自動化應用)中的哪一個,結果頁導向**第三方課程平台的推廣/聯盟連結**。
