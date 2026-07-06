@@ -1,9 +1,20 @@
 # 圖片製作總清單(給站長)
 
-最後更新:2026-07-06
+最後更新:2026-07-07
 
 全站頁面的 `og:image`(社群分享縮圖)、favicon 圖示、manifest 圖示都已在 HTML 裡接好路徑。
-**你只要把圖片產生後,依下表路徑放進資料夾,不用改任何 HTML。**
+**你只要把圖片產生後,依下表路徑放進資料夾;若是新增專屬圖,再把完成的 slug 告訴我,我會幫你切換 HTML。**
+
+目前完成:
+
+- 核心/預設分享圖: `images/og-default.png`、`images/og/home-og.png`、`images/og/articles-og.png`、`images/quizzes/cat-personality-og.png`、`images/quizzes/dog-personality-og.png`
+- 貓咪結果頁分享圖 12 張: `images/results/<cat-slug>-og.png`,已接到各自結果頁的 `og:image` / Twitter image / JSON-LD image
+- **iOS / Android icon 3 張**(2026-07-07 我直接用 favicon.svg 的向量路徑重繪產生,你不用再做):`images/icons/apple-touch-icon.png`、`images/icons/icon-192.png`、`images/icons/icon-512.png`
+
+尚未完成:
+
+- 狗狗結果頁分享圖 10 張: `images/results/<dog-slug>-og.png`
+- 文章分享圖 6 張: `images/articles/<article-slug>/og.png`
 
 - 全部用 **PNG**、**RGB**、去背或滿版皆可(社群縮圖建議滿版不要透明)。
 - 分享圖統一 **1200 × 630**;主要文字/主體集中在中間,四周留 5% 安全邊,避免被裁切。
@@ -12,27 +23,16 @@
 
 ---
 
-## Tier 0 — 必做(4 張,做完全站分享與圖示就完整)
+## Tier 0 — 已全部完成 ✅
 
 | 路徑 | 尺寸 | 用途 |
 |---|---|---|
-| `images/og-default.png` | 1200 × 630 | 全站預設分享縮圖(目前每頁都指向這張) |
+| `images/og-default.png` | 1200 × 630 | 全站預設分享縮圖 |
 | `images/icons/apple-touch-icon.png` | 180 × 180 | iPhone 加到主畫面的圖示 |
 | `images/icons/icon-192.png` | 192 × 192 | PWA / Android 圖示 |
 | `images/icons/icon-512.png` | 512 × 512 | PWA / Android 大圖示 |
 
-**og-default.png 生成提示詞:**
-```
-暖色奶茶色系的心理測驗網站品牌分享圖,一隻可愛的橘貓和一隻柴犬並排,
-背景是柔和的米色 (#F6EEE3) 帶淡淡蜜橘光暈,畫面乾淨,中央上方留出放標題
-「毛毛心理測驗所」的空間,扁平原創插畫風格,可愛但不幼稚,1200x630
-```
-**三個 icon 生成提示詞(同一顆主體,輸出三種尺寸):**
-```
-一個貓咪肉球圖示,奶茶色 (#C9A87C) 與蜜橘色 (#E8A87C),米色圓角背景 (#F6EEE3),
-簡潔、置中、扁平風格,適合當 app 圖示,正方形
-```
-> 已有向量版 `favicon.svg`(分頁小圖示),icon 只是給 iOS/Android 用的點陣版,風格對齊即可。
+三個 icon 是我直接把 `favicon.svg` 的向量路徑(圓角背景+4 個橢圓耳朵+1 個貝茲曲線肉球)用 Pillow 依比例重繪成三種尺寸,像素比對過與原圖一致,不需要你另外生成。
 
 ---
 
@@ -40,8 +40,8 @@
 
 | 路徑 | 尺寸 | 主體 |
 |---|---|---|
-| `images/quizzes/cat-personality/og.png` | 1200 × 630 | 一群不同花色的貓,標題感 |
-| `images/quizzes/dog-personality/og.png` | 1200 × 630 | 一群不同品種的狗,標題感 |
+| `images/quizzes/cat-personality-og.png` | 1200 × 630 | 一群不同花色的貓,標題感(已完成) |
+| `images/quizzes/dog-personality-og.png` | 1200 × 630 | 一群不同品種的狗,標題感(已完成) |
 
 **提示詞(貓;狗版把「貓」換成「狗」、品種換成柴犬/哈士奇/黃金獵犬/柯基):**
 ```
@@ -55,7 +55,7 @@
 ## Tier 2 — 選配(結果頁專屬分享圖,共 22 張)
 
 做了會讓「我是橘貓!」這種分享自帶對應角色圖,點閱率更高;沒做也會用預設圖,不影響上線。
-路徑一律 `images/results/<slug>/og.png`,尺寸 1200 × 630。
+路徑一律 `images/results/<slug>-og.png`,尺寸 1200 × 630。
 
 **共用提示詞範本**(把 `{中文名}`、`{特徵}`、`{個性}` 換掉):
 ```
@@ -64,6 +64,8 @@
 ```
 
 貓(12):
+
+狀態:2026-07-07 已完成 12 張,並已接進各自結果頁。
 
 | slug | 中文名 | 個性(tagline) | 特徵提示 |
 |---|---|---|---|
@@ -81,6 +83,8 @@
 | tuxedo-cat | 賓士貓 | 街頭生存高手 | 黑白賓士配色、機靈 |
 
 狗(10):
+
+狀態:尚未完成;下一批可從狗狗結果頁開始。
 
 | slug | 中文名 | 個性(tagline) | 特徵提示 |
 |---|---|---|---|

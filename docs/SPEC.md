@@ -1,6 +1,6 @@
 # 毛毛心理測驗所 — 改版規格書(AdSense 二次送審)
 
-最後更新:2026-07-06
+最後更新:2026-07-07
 
 ## 背景
 
@@ -77,9 +77,12 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - [x] 狗狗測驗上線(介紹頁 + play + 10 結果頁)
 - [x] 每頁獨立 title / description / canonical / og:url(稽核零缺漏)
 - [x] 全站 og:image / Twitter card / JSON-LD / favicon / manifest(meta-kit 注入,65 塊結構化資料通過解析)
-- [x] sitemap.xml 收錄所有正式頁面(不含 play/、404),與實體檔一致
+- [x] sitemap.xml 收錄所有正式頁面(不含 play/、404),與實體檔一致,已補 `lastmod` 與有專屬圖頁面的 `image:image`
 - [x] 站內連結稽核:零壞連結
-- [ ] **圖片:依 `docs/content-kit/image-manifest.md` 產生**(Tier 0 的 4 張為送審前必做)
+- [x] 狗結果頁文案補深至貓頁水準(9 個 h2 段落,love/friendship/work/stress 各自獨立;目前狗頁平均字數已超過貓頁)
+- [x] 文章 ↔ 結果頁雙向內部連結:6 篇文章共 58 處品種名稱首次提及已連到對應結果頁;22 個結果頁底部新增「延伸閱讀」連回 2 篇相關文章
+- [x] **圖片 Tier 0 全部完成**:favicon.svg 手動重繪成 3 個點陣 icon(apple-touch-icon/icon-192/icon-512),像素級對齊原向量圖,不需額外生成
+- [ ] 圖片 Tier 1/2/3 專屬圖(依 `docs/content-kit/image-manifest.md`):狗狗結果頁 10 張、文章圖 6 張 —— 站長產生後告知 slug,我來接 og:image
 - [ ] Google Search Console:驗證網域、提交 sitemap、抽查 5 頁「網址檢查」確認可索引
 - [ ] 手機實測:無載入卡住、無壞連結、無「敬請期待」空頁
 - [ ] 等主要頁面進索引(約 1-2 週)→ AdSense 按「要求審查」
@@ -90,20 +93,29 @@ russian→russian-blue, tuxedo→tuxedo-cat
 2. ✅ 內容:12 貓 + 10 狗結果頁、6 篇文章、政策四頁(站長已補齊)
 3. ✅ 狗狗測驗建置(含 dogSVG 插圖產生器)
 4. ✅ 架構強化 meta-kit:og:image / Twitter card / JSON-LD / favicon / manifest 全站注入
-5. ⏳ 圖片產生(站長,依 `docs/content-kit/image-manifest.md`):Tier 0 四張必做;產專屬圖後告知 slug,我把該頁 og:image 切換
-6. ⬜ (選)狗結果頁文案補深至貓頁水準(目前狗頁合併感情/友情/職場/壓力為一段,字數約少 30%)
-7. ⬜ 網域購買 → set-domain → DNS → push 上線
-8. ⬜ 舊 cat-quiz repo 轉址頁(等網域定案後產生)
-9. ⬜ Search Console 驗證 + 提交 sitemap
-10. ⬜ (選)GA4 取代/並行 StatCounter,追蹤 quiz_start / quiz_complete / result_share
-11. ⬜ 索引確認後重新送審 AdSense
+5. ✅ 狗結果頁深度補齊至貓頁水準(站長已完成)
+6. ✅ 圖片 Tier 0:favicon 點陣化(3 個 icon);✅ 核心 OG / 預設圖;✅ 貓咪結果頁 12 張專屬圖
+7. ✅ 文章 ↔ 結果頁雙向內部連結(58 處品種連結 + 22 頁延伸閱讀)
+8. ✅ sitemap.xml 補 lastmod 與 image sitemap 擴充
+9. ⬜ 圖片 Tier 1/2/3:狗狗結果頁 10 張、文章圖 6 張(站長生成中)
+10. ⬜ 網域購買 → set-domain → DNS → push 上線
+11. ⬜ 舊 cat-quiz repo 轉址頁(等網域定案後產生)
+12. ⬜ Search Console 驗證 + 提交 sitemap
+13. ⬜ (選)GA4 取代/並行 StatCounter,追蹤 quiz_start / quiz_complete / result_share
+14. ⬜ 索引確認後重新送審 AdSense
 
 ## 架構強化紀錄(meta-kit)
 
 - 由 scratchpad 的 `inject_meta.py` 一次注入全站,冪等(靠 `<!-- meta-kit -->` 標記,重跑先移除再重建)。
-- og:image 目前全指向 `/images/og-default.png`;要把某頁換成專屬圖,在 `inject_meta.py` 的 `PER_PAGE_OG` 加該頁 url 再重跑即可。
+- og:image:核心頁已用專屬 OG 圖;貓咪 12 個結果頁已切到 `/images/results/<slug>-og.png`;尚未做專屬圖的頁面使用 `/images/og-default.png`。
 - JSON-LD:首頁 WebSite;結果頁與文章頁 Article;兩個測驗介紹頁 FAQPage;有麵包屑的頁面 BreadcrumbList。
-- favicon.svg 為自製向量肉球圖示;iOS/Android 點陣圖示待 `image-manifest.md` Tier 0 產生。
+- favicon.svg 為自製向量肉球圖示;iOS/Android 點陣圖示已用 Pillow 手動重繪貝茲曲線路徑產生(cairo 原生函式庫裝不上,改用等效重繪,像素比對與原圖一致)。
+
+## 內部連結強化紀錄(2026-07-07)
+
+- **文章 → 結果頁**:6 篇文章的品種名稱(如「橘貓」「柯基」)首次出現時自動連到對應 `/results/<slug>/`,同一篇文章同一品種只連第一次出現處,避免關鍵字堆疊觀感。共新增 58 處連結。
+- **結果頁 → 文章**:22 個結果頁的「其他人格」清單下方新增「📚 延伸閱讀」區塊,貓頁連回 `cat-personality-types-guide` + `cat-quiz-friend-pairing`,狗頁連回 `dog-personality-types-guide` + `dog-social-style-guide`。
+- 腳本:`link_and_enrich.py`(已跑過,冪等 — 已有「延伸閱讀」的頁面會跳過);若之後新增文章想比照辦理,邏輯可重用。
 
 ## 追蹤碼現況
 
