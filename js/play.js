@@ -6,6 +6,11 @@
  */
 (function () {
   var cfg = window.QUIZ_CONFIG || {};
+  // 插圖產生器:貓測驗用 catSVG(預設),狗測驗設 cfg.artFn = "dogSVG"
+  function drawArt(art, uid) {
+    var fn = window[cfg.artFn] || window.catSVG;
+    return fn(art, uid);
+  }
 
   var quiz = null;
   var current = 0;
@@ -125,7 +130,7 @@
     document.getElementById("screen-question").hidden = true;
     var screen = document.getElementById("screen-result");
     screen.hidden = false;
-    document.getElementById("result-art").innerHTML = catSVG(r.art, "result");
+    document.getElementById("result-art").innerHTML = drawArt(r.art, "result");
     document.getElementById("result-name").textContent = r.name;
     document.getElementById("result-tagline").textContent = r.tagline;
     document.getElementById("result-desc").textContent = r.description;

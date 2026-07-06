@@ -1,0 +1,546 @@
+{
+  "id": "dog-personality",
+  "title": "你是哪種狗狗?",
+  "description": "12 題快速心理測驗\n測出你的狗狗人格、好朋友配對和相剋組合!",
+  "shareTitle": "你是哪種狗狗?",
+  "shareText": "我測出來是「{result}」!本測驗共有 10 種狗狗,快來測看看你是哪一種,看我們是什麼組合 🐶",
+  "resultCta": "本測驗共有 10 種狗狗,快叫朋友來測,看你們是哪種組合!",
+  "startArt": {
+    "base": "#E8A05A",
+    "ear": "point",
+    "pattern": "none",
+    "eye": "#4A3826",
+    "tongue": true
+  },
+  "questions": [
+    {
+      "text": "朋友揪兩天一夜小旅行,你在團裡的角色是?",
+      "options": [
+        {
+          "text": "行程表做好做滿,連幾點上廁所都排好",
+          "scores": {
+            "border": 2
+          }
+        },
+        {
+          "text": "前一晚才丟兩件衣服進背包,到了再說",
+          "scores": {
+            "mix": 1,
+            "husky": 1
+          }
+        },
+        {
+          "text": "必吃名單和拍照景點,我早就研究好了",
+          "scores": {
+            "poodle": 1,
+            "dachshund": 1
+          }
+        },
+        {
+          "text": "人到就好,我負責在車上補眠",
+          "scores": {
+            "frenchie": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "你的運動習慣是?",
+      "options": [
+        {
+          "text": "固定時間固定路線,風雨無阻",
+          "scores": {
+            "shiba": 1,
+            "border": 1
+          }
+        },
+        {
+          "text": "要揪團才有動力,一個人絕對不動",
+          "scores": {
+            "golden": 1,
+            "corgi": 1
+          }
+        },
+        {
+          "text": "熱血猛練三天,然後消失三個禮拜",
+          "scores": {
+            "husky": 2
+          }
+        },
+        {
+          "text": "健身影片收藏了一堆,身體還沒開始動",
+          "scores": {
+            "dachshund": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "被稱讚的時候,你的反應是?",
+      "options": [
+        {
+          "text": "嘴上說「還好啦」,內心煙火放整晚",
+          "scores": {
+            "shiba": 2
+          }
+        },
+        {
+          "text": "開心全寫在臉上,尾巴都要搖出來了",
+          "scores": {
+            "golden": 2
+          }
+        },
+        {
+          "text": "從容收下,畢竟我真的有在經營自己",
+          "scores": {
+            "poodle": 2
+          }
+        },
+        {
+          "text": "追問「真的嗎?哪裡好?說具體一點」",
+          "scores": {
+            "dachshund": 1,
+            "chihuahua": 1
+          }
+        }
+      ]
+    },
+    {
+      "text": "網路爆紅名店要排一小時,你會?",
+      "options": [
+        {
+          "text": "排!現在不吃,以後只會排更久",
+          "scores": {
+            "corgi": 1,
+            "poodle": 1
+          }
+        },
+        {
+          "text": "先查有沒有分店或線上取號,能不排就不排",
+          "scores": {
+            "border": 1,
+            "dachshund": 1
+          }
+        },
+        {
+          "text": "不了,隔壁沒人排的那間搞不好更好吃",
+          "scores": {
+            "frenchie": 1,
+            "mix": 1
+          }
+        },
+        {
+          "text": "朋友想吃我就陪排,邊排邊聊也不錯",
+          "scores": {
+            "golden": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "在陌生的地方迷路了,你會?",
+      "options": [
+        {
+          "text": "憑感覺亂走,常常因此發現新大陸",
+          "scores": {
+            "mix": 1,
+            "husky": 1
+          }
+        },
+        {
+          "text": "馬上開地圖定位,三分鐘回到正軌",
+          "scores": {
+            "border": 2
+          }
+        },
+        {
+          "text": "直接找路人問,還順便被推薦私房景點",
+          "scores": {
+            "golden": 1,
+            "corgi": 1
+          }
+        },
+        {
+          "text": "嘴硬說沒迷路,繞三圈才肯拿出手機",
+          "scores": {
+            "chihuahua": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "出門計畫被一場大雨打亂,你會?",
+      "options": [
+        {
+          "text": "太好了,正大光明在家躺一整天",
+          "scores": {
+            "frenchie": 2
+          }
+        },
+        {
+          "text": "撐傘照樣出門,雨天有雨天的玩法",
+          "scores": {
+            "husky": 1,
+            "mix": 1
+          }
+        },
+        {
+          "text": "立刻啟動備案 B,行程無縫接軌",
+          "scores": {
+            "border": 2
+          }
+        },
+        {
+          "text": "先碎念半小時,氣象預報跟老天都被我唸過一輪",
+          "scores": {
+            "chihuahua": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "KTV 裡的你,通常是?",
+      "options": [
+        {
+          "text": "麥克風黏在手上,嗨歌一首接一首",
+          "scores": {
+            "corgi": 1,
+            "husky": 1
+          }
+        },
+        {
+          "text": "點冷門好歌,唱完全場都在問歌名",
+          "scores": {
+            "poodle": 1,
+            "mix": 1
+          }
+        },
+        {
+          "text": "飆高音擔當,音量跟體型完全不成正比",
+          "scores": {
+            "chihuahua": 2
+          }
+        },
+        {
+          "text": "專心吃東西,被 cue 到才勉為其難唱一首",
+          "scores": {
+            "frenchie": 1,
+            "shiba": 1
+          }
+        }
+      ]
+    },
+    {
+      "text": "分組報告,你通常負責的是?",
+      "options": [
+        {
+          "text": "簡報美編,做得比內容還精緻",
+          "scores": {
+            "poodle": 2
+          }
+        },
+        {
+          "text": "上台報告,天生自帶觀眾緣",
+          "scores": {
+            "golden": 1,
+            "corgi": 1
+          }
+        },
+        {
+          "text": "查資料,挖出連老師都沒看過的文獻",
+          "scores": {
+            "dachshund": 2
+          }
+        },
+        {
+          "text": "追進度催稿,地表最強人肉鬧鐘",
+          "scores": {
+            "chihuahua": 1,
+            "border": 1
+          }
+        }
+      ]
+    },
+    {
+      "text": "你跟早起的關係是?",
+      "options": [
+        {
+          "text": "晨型人,連假日也照樣六點自動醒",
+          "scores": {
+            "shiba": 1,
+            "border": 1
+          }
+        },
+        {
+          "text": "鬧鐘設十個,每個都被我親手按掉",
+          "scores": {
+            "frenchie": 2
+          }
+        },
+        {
+          "text": "起不起得來,要看今天的行程好不好玩",
+          "scores": {
+            "husky": 1,
+            "corgi": 1
+          }
+        },
+        {
+          "text": "沒有固定作息,我的生理時鐘走自由風",
+          "scores": {
+            "mix": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "突然多出一天假,你會怎麼用?",
+      "options": [
+        {
+          "text": "早上七點在群組丟「有人要出門嗎」,十點人已經在路上",
+          "scores": {
+            "husky": 1,
+            "golden": 1
+          }
+        },
+        {
+          "text": "先睡飽,剩下的交給當下的心情決定",
+          "scores": {
+            "frenchie": 1,
+            "mix": 1
+          }
+        },
+        {
+          "text": "報名一直想上的體驗課,學點新東西",
+          "scores": {
+            "dachshund": 1,
+            "poodle": 1
+          }
+        },
+        {
+          "text": "自己一個人出門晃,不用配合任何人最自在",
+          "scores": {
+            "shiba": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "你的手搖飲點單風格是?",
+      "options": [
+        {
+          "text": "十年如一日,永遠都是那一杯",
+          "scores": {
+            "shiba": 2
+          }
+        },
+        {
+          "text": "每次都點新品,踩雷也是一種樂趣",
+          "scores": {
+            "husky": 1,
+            "corgi": 1
+          }
+        },
+        {
+          "text": "甜度冰塊有公式,連哪家茶葉好都研究過",
+          "scores": {
+            "dachshund": 1,
+            "poodle": 1
+          }
+        },
+        {
+          "text": "幫大家一起訂,誰要去冰微糖全都記得",
+          "scores": {
+            "golden": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "最後一題:跨年夜你會怎麼過?",
+      "options": [
+        {
+          "text": "衝現場看煙火,人擠人才有過節的感覺",
+          "scores": {
+            "corgi": 2
+          }
+        },
+        {
+          "text": "在家看轉播,倒數完三分鐘內入睡",
+          "scores": {
+            "frenchie": 1,
+            "shiba": 1
+          }
+        },
+        {
+          "text": "揪一票人頂樓烤肉,自己的跨年自己辦",
+          "scores": {
+            "mix": 1,
+            "husky": 1
+          }
+        },
+        {
+          "text": "只跟兩三個死黨小聚,人多的場合不了",
+          "scores": {
+            "chihuahua": 2
+          }
+        }
+      ]
+    }
+  ],
+  "results": {
+    "shiba": {
+      "name": "柴犬",
+      "tagline": "傲嬌固執派",
+      "description": "你的字典裡沒有「隨便」,喝哪一家、走哪條路、東西放哪裡,全都有自己的堅持。表面淡淡的,其實內心小劇場很精彩,被稱讚會嘴硬說還好,回家偷笑到睡著。朋友都知道你不好凹,但也知道你答應的事,颱風天也會做到。",
+      "friend": "法鬥",
+      "rival": "哈士奇",
+      "weight": 5,
+      "art": {
+        "base": "#E8A05A",
+        "ear": "point",
+        "pattern": "none",
+        "eye": "#4A3826"
+      }
+    },
+    "husky": {
+      "name": "哈士奇",
+      "tagline": "暴衝行動派",
+      "description": "想到什麼就衝了,計畫是什麼?能吃嗎?你的人生充滿臨時起意:臨時的旅行、臨時的熱血、臨時拆掉重排的房間。朋友常被你嚇一跳,但也承認沒有你的日子超無聊。唯一的副作用是,身邊總得有人幫你收拾殘局。",
+      "friend": "米克斯",
+      "rival": "邊境牧羊犬",
+      "weight": 6,
+      "art": {
+        "base": "#9FB0C4",
+        "ear": "point",
+        "pattern": "mask",
+        "p1": "#F5F7FA",
+        "eye": "#7FB3D5"
+      }
+    },
+    "golden": {
+      "name": "黃金獵犬",
+      "tagline": "陽光暖心系",
+      "description": "行走的太陽能板,對誰都熱情,走到哪熟到哪。朋友難過你第一個出現,揪團你永遠加一,連幫大家訂飲料都記得每個人的甜度冰塊。大家都說你人超好,唯一的煩惱是你對誰都好,曖昧對象常常搞不清楚自己算什麼。",
+      "friend": "柯基",
+      "rival": "吉娃娃",
+      "weight": 1,
+      "art": {
+        "base": "#E5BB7B",
+        "ear": "floppy",
+        "pattern": "none",
+        "muzzle": "#F4DCB0",
+        "eye": "#6B4F2E",
+        "tongue": true
+      }
+    },
+    "corgi": {
+      "name": "柯基",
+      "tagline": "歡樂氣氛組",
+      "description": "短短的腿,滿滿的行程。哪裡熱鬧哪裡去,聚會少了你會直接安靜三成。你自帶喜感,連認真的時候都有人想笑,偶爾會覺得不被當一回事,但你心裡明白:能把快樂帶給身邊的人,是一種被嚴重低估的超能力。",
+      "friend": "黃金獵犬",
+      "rival": "法鬥",
+      "weight": 10,
+      "art": {
+        "base": "#EFA75F",
+        "ear": "bat",
+        "pattern": "blaze",
+        "p1": "#FFF6EA",
+        "eye": "#5B4632",
+        "tongue": true
+      }
+    },
+    "poodle": {
+      "name": "貴賓",
+      "tagline": "機靈時髦精",
+      "description": "聰明、學得快、品味在線,從穿搭到簡報都看得出你的講究。新東西你永遠第一批跟上,還能講出個所以然。別人以為你只是愛漂亮,其實你是用腦在生活,漂亮只是順便。缺點嘛——對自己要求太高,偶爾會累到懷疑人生。",
+      "friend": "邊境牧羊犬",
+      "rival": "米克斯",
+      "weight": 7,
+      "art": {
+        "base": "#E5C39A",
+        "ear": "floppy",
+        "pattern": "curls",
+        "p1": "#C89B6D",
+        "eye": "#6B4F2E"
+      }
+    },
+    "frenchie": {
+      "name": "法鬥",
+      "tagline": "省電慢活家",
+      "description": "能躺就不坐,能坐就不站,你的人生常駐省電模式。別人焦慮到快爆炸,你一句「急什麼」就把氣氛穩下來。不是懶,是懂得把力氣留給值得的事。朋友都說跟你相處零壓力,你就是人形抱枕本枕,情緒穩定界的天花板。",
+      "friend": "柴犬",
+      "rival": "邊境牧羊犬",
+      "weight": 4,
+      "art": {
+        "base": "#D9CFC4",
+        "ear": "bat",
+        "pattern": "mask",
+        "p1": "#8A7A6E",
+        "muzzle": "#B7A99B",
+        "eye": "#4A3826"
+      }
+    },
+    "border": {
+      "name": "邊境牧羊犬",
+      "tagline": "全能計畫控",
+      "description": "腦子二十四小時運轉,行程表、備案、備案的備案,你全都有。出遊只要有你在,大家可以直接把腦袋放在家裡。效率是你的信仰,最痛苦的事是看別人用超沒效率的方式做事,還得忍住不出手接管——雖然最後通常還是接管了。",
+      "friend": "貴賓",
+      "rival": "哈士奇",
+      "weight": 3,
+      "art": {
+        "base": "#57504B",
+        "ear": "floppy",
+        "pattern": "blaze",
+        "p1": "#FFF8EF",
+        "muzzle": "#FFF8EF",
+        "eye": "#6B4F2E"
+      }
+    },
+    "chihuahua": {
+      "name": "吉娃娃",
+      "tagline": "小辣椒戰士",
+      "description": "體型迷你,氣場八百坪。誰都別想欺負你或你罩的人,嗆聲的時候連大你兩倍的都會後退一步。其實你外剛內軟,兇完會偷偷觀察對方有沒有受傷。你的愛圈子很小但濃度超高,進得了你世界的人,都被你護得好好的。",
+      "friend": "臘腸",
+      "rival": "黃金獵犬",
+      "weight": 2,
+      "art": {
+        "base": "#E3C08F",
+        "ear": "bat",
+        "pattern": "none",
+        "eye": "#4A3826"
+      }
+    },
+    "dachshund": {
+      "name": "臘腸",
+      "tagline": "好奇挖掘機",
+      "description": "對世界充滿問號,一件事不研究到底絕不罷休。朋友隨口提到的東西,你半夜已經看完十篇開箱和三部評測。大家有疑難雜症都先問你,因為你不是已經知道答案,就是很樂意陪他們一起挖出答案。你的收藏夾,根本是地下寶庫。",
+      "friend": "吉娃娃",
+      "rival": "法鬥",
+      "weight": 8,
+      "art": {
+        "base": "#A9683F",
+        "ear": "long",
+        "pattern": "none",
+        "muzzle": "#C98A57",
+        "eye": "#4A3826"
+      }
+    },
+    "mix": {
+      "name": "米克斯",
+      "tagline": "野生生活家",
+      "description": "你的快樂門檻不高,不是將就,是你真的能把任何日子玩出味道:巷口散步能撿到新開的小店,便利商店晚餐也能吃出儀式感。你很少焦慮,因為你比誰都清楚自己不要什麼。朋友最羨慕你的,就是那份把平凡日子過成小旅行的本事。",
+      "friend": "哈士奇",
+      "rival": "貴賓",
+      "weight": 9,
+      "art": {
+        "base": "#F1E3CE",
+        "ear": "floppy",
+        "pattern": "patches",
+        "p1": "#C98A57",
+        "p2": "#6E5B49",
+        "eye": "#5B4632",
+        "tongue": true
+      }
+    }
+  }
+}
