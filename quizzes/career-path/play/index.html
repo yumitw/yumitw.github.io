@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <!-- 純答題頁:不索引、不放任何廣告程式碼 -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>作答中|你適合學什麼?|毛毛心理測驗所</title>
+  <link rel="stylesheet" href="/css/style.css">
+    <!-- meta-kit -->
+  <meta name="theme-color" content="#E8A87C">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- /meta-kit -->
+</head>
+<body>
+  <main class="page">
+    <!-- 答題畫面 -->
+    <section id="screen-question" class="screen">
+      <div class="progress-wrap">
+        <div class="progress-label" id="progress-label">準備中…</div>
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      </div>
+      <div class="question-card" id="question-card">
+        <h1 class="question-text" id="question-text"></h1>
+        <div class="options" id="options"></div>
+      </div>
+      <a class="btn btn-ghost" href="../" style="margin-top:16px;">離開測驗</a>
+    </section>
+
+    <!-- 過渡期備用結果畫面(正常不會用到,7 個結果頁從一開始就都在 readySlugs 裡) -->
+    <section id="screen-result" class="screen" hidden>
+      <p class="result-intro">你的測驗結果是……</p>
+      <div class="result-card" id="result-card">
+        <div class="result-art" id="result-art" aria-hidden="true"></div>
+        <div class="result-badge" id="result-name"></div>
+        <div class="result-tagline" id="result-tagline"></div>
+        <p class="result-desc" id="result-desc"></p>
+      </div>
+      <div class="result-actions">
+        <button class="btn btn-secondary" id="btn-retry">再測一次 🔄</button>
+        <a class="btn btn-ghost" href="../">回測驗介紹</a>
+      </div>
+    </section>
+
+    <p id="error-box" class="error-box" hidden></p>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script>
+    window.QUIZ_CONFIG = {
+      dataUrl: "../data.json",
+      quizUrl: "/quizzes/career-path/",
+      resultBase: "/results/",
+      slugs: {
+        "ai-data": "career-ai-data",
+        "web-dev": "career-web-dev",
+        "product-design": "career-product-design",
+        "digital-marketing": "career-digital-marketing",
+        "commercial-design": "career-commercial-design",
+        "multimedia": "career-multimedia",
+        "automation": "career-automation"
+      },
+      readySlugs: [
+        "career-ai-data",
+        "career-web-dev",
+        "career-product-design",
+        "career-digital-marketing",
+        "career-commercial-design",
+        "career-multimedia",
+        "career-automation"
+      ]
+    };
+  </script>
+  <script src="/js/play.js"></script>
+
+  <!-- StatCounter(隱形計數) -->
+  <script type="text/javascript">
+    var sc_project=13334396;
+    var sc_invisible=1;
+    var sc_security="996a52aa";
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/13334396/0/996a52aa/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+</body>
+</html>

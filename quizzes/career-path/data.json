@@ -1,0 +1,420 @@
+{
+  "id": "career-path",
+  "title": "你適合學什麼?7 大領域性向測驗",
+  "description": "12 題性向測驗,測出你最適合的學習領域,還有能學到的具體技能與推薦課程!",
+  "shareTitle": "你適合學什麼?7 大領域性向測驗",
+  "shareText": "我測出來最適合往「{result}」發展!12 題測出你的學習風格和天生優勢,快來測測看你適合哪個領域",
+  "resultCta": "本測驗涵蓋 7 大熱門學習領域,測完可以直接對照自己的興趣天賦,想清楚下一步要往哪裡累積!",
+  "questions": [
+    {
+      "text": "看到一個超難用的 App 或網站,你的第一反應是?",
+      "options": [
+        {
+          "text": "想動手改一下操作流程,一定有更順的做法",
+          "scores": {
+            "product-design": 2
+          }
+        },
+        {
+          "text": "手癢想直接找出問題,把功能修好",
+          "scores": {
+            "web-dev": 2
+          }
+        },
+        {
+          "text": "算了,寫個小工具繞過這個爛設計比較快",
+          "scores": {
+            "automation": 2
+          }
+        },
+        {
+          "text": "好奇怪,這麼難用還一堆人在用,是行銷做太好了嗎",
+          "scores": {
+            "digital-marketing": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "追劇或滑短影音的時候,最容易吸引你注意的是?",
+      "options": [
+        {
+          "text": "剪輯的節奏跟轉場,一個處理不好整個氣氛就跑掉",
+          "scores": {
+            "multimedia": 2
+          }
+        },
+        {
+          "text": "畫面的色調跟構圖,莫名就是好看",
+          "scores": {
+            "commercial-design": 2
+          }
+        },
+        {
+          "text": "標題跟縮圖,想搞懂為什麼會讓人忍不住點進去",
+          "scores": {
+            "digital-marketing": 2
+          }
+        },
+        {
+          "text": "推薦演算法,好奇它是怎麼知道我會想看這個",
+          "scores": {
+            "ai-data": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "朋友傳了一份亂七八糟的 Excel 資料給你,你會?",
+      "options": [
+        {
+          "text": "手癢想寫個程式把它整理分析一遍",
+          "scores": {
+            "ai-data": 2
+          }
+        },
+        {
+          "text": "想乾脆設計一套自動整理流程,以後不用再手動處理",
+          "scores": {
+            "automation": 2
+          }
+        },
+        {
+          "text": "挑重點做成一份有說服力的簡報",
+          "scores": {
+            "digital-marketing": 2
+          }
+        },
+        {
+          "text": "想弄懂這些數字背後,大家到底在幹嘛",
+          "scores": {
+            "product-design": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "買東西之前,你通常靠什麼下決定?",
+      "options": [
+        {
+          "text": "自己實際用過,順手才是真的",
+          "scores": {
+            "product-design": 2
+          }
+        },
+        {
+          "text": "包裝或視覺設計先打中我,再說",
+          "scores": {
+            "commercial-design": 2
+          }
+        },
+        {
+          "text": "廣告或口碑講的故事,打動我就買單",
+          "scores": {
+            "digital-marketing": 2
+          }
+        },
+        {
+          "text": "先把規格數據拉出來比一輪",
+          "scores": {
+            "ai-data": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "團隊報告要交,你最想搶哪個部分來負責?",
+      "options": [
+        {
+          "text": "做一套之後每次都能直接套用的簡報模板",
+          "scores": {
+            "commercial-design": 1,
+            "automation": 1
+          }
+        },
+        {
+          "text": "乾脆錄一段介紹影片,比文字有說服力",
+          "scores": {
+            "multimedia": 2
+          }
+        },
+        {
+          "text": "做一個小小的互動網頁,直接展示成果",
+          "scores": {
+            "web-dev": 2
+          }
+        },
+        {
+          "text": "想清楚怎麼包裝這個故事,讓大家聽了就買單",
+          "scores": {
+            "digital-marketing": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "遇到重複性很高的手動工作,你的態度通常是?",
+      "options": [
+        {
+          "text": "一定要想辦法自動化,不然會忍不住手癢",
+          "scores": {
+            "automation": 2
+          }
+        },
+        {
+          "text": "想從資料裡面找出更聰明的做法",
+          "scores": {
+            "ai-data": 1,
+            "automation": 1
+          }
+        },
+        {
+          "text": "想做一個小工具把它處理掉",
+          "scores": {
+            "web-dev": 2
+          }
+        },
+        {
+          "text": "還好啦,反正每次都能做出不一樣的東西",
+          "scores": {
+            "commercial-design": 1,
+            "multimedia": 1
+          }
+        }
+      ]
+    },
+    {
+      "text": "做事情的時候,你比較享受哪一種成就感?",
+      "options": [
+        {
+          "text": "東西真的動起來、可以用了的那一刻",
+          "scores": {
+            "web-dev": 2
+          }
+        },
+        {
+          "text": "別人用了之後說「這個好順」的瞬間",
+          "scores": {
+            "product-design": 2
+          }
+        },
+        {
+          "text": "做出來的東西,別人看了會有反應、有情緒",
+          "scores": {
+            "multimedia": 2
+          }
+        },
+        {
+          "text": "從一堆亂數據裡,終於抓到規律或模式",
+          "scores": {
+            "ai-data": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "朋友心情不好來找你,你習慣怎麼安慰?",
+      "options": [
+        {
+          "text": "傳一段有趣的影片給他,先笑再說",
+          "scores": {
+            "multimedia": 2
+          }
+        },
+        {
+          "text": "先搞懂他真正在意、卡住的點是什麼",
+          "scores": {
+            "product-design": 2
+          }
+        },
+        {
+          "text": "講個故事或換個角度,讓他跳出來看事情",
+          "scores": {
+            "digital-marketing": 2
+          }
+        },
+        {
+          "text": "畫張圖或做張迷因圖,逗他笑到忘記煩惱",
+          "scores": {
+            "commercial-design": 1,
+            "multimedia": 1
+          }
+        }
+      ]
+    },
+    {
+      "text": "滑社群平台的時候,你最常做的事是?",
+      "options": [
+        {
+          "text": "自己拍、自己剪,經營一點內容",
+          "scores": {
+            "multimedia": 2
+          }
+        },
+        {
+          "text": "收藏美美的圖當靈感庫",
+          "scores": {
+            "commercial-design": 2
+          }
+        },
+        {
+          "text": "研究為什麼某些貼文會突然爆紅,想抓出背後的規律",
+          "scores": {
+            "digital-marketing": 1,
+            "ai-data": 1
+          }
+        },
+        {
+          "text": "觀察 App 介面又改版了,想拆解設計邏輯",
+          "scores": {
+            "product-design": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "學一項新東西的時候,你比較能堅持哪一種過程?",
+      "options": [
+        {
+          "text": "反覆試錯,調到程式跑出對的結果為止",
+          "scores": {
+            "ai-data": 2
+          }
+        },
+        {
+          "text": "把流程拆到每個步驟都懂,再一步步串起來",
+          "scores": {
+            "automation": 2
+          }
+        },
+        {
+          "text": "一行一行把功能做出來,除錯到能動為止",
+          "scores": {
+            "web-dev": 2
+          }
+        },
+        {
+          "text": "反覆練習,把手感或畫感磨出來",
+          "scores": {
+            "commercial-design": 2
+          }
+        }
+      ]
+    },
+    {
+      "text": "老闆丟給你一句「幫我把這個流程弄快一點」,你會怎麼想?",
+      "options": [
+        {
+          "text": "找幾個工具串起來,讓它自己跑",
+          "scores": {
+            "automation": 2
+          }
+        },
+        {
+          "text": "先分析數據,看瓶頸卡在哪一段",
+          "scores": {
+            "ai-data": 1,
+            "automation": 1
+          }
+        },
+        {
+          "text": "乾脆做一個系統把整套流程整合起來",
+          "scores": {
+            "web-dev": 2
+          }
+        },
+        {
+          "text": "先問問實際用的人,卡關卡在哪一步",
+          "scores": {
+            "product-design": 1,
+            "automation": 1
+          }
+        }
+      ]
+    },
+    {
+      "text": "最後一題,如果可以選,你想成為哪一種被記住的人?",
+      "options": [
+        {
+          "text": "能把想法真的做出來的人",
+          "scores": {
+            "web-dev": 2
+          }
+        },
+        {
+          "text": "很懂使用者在想什麼的人",
+          "scores": {
+            "product-design": 2
+          }
+        },
+        {
+          "text": "很會說故事、讓東西被看見的人",
+          "scores": {
+            "digital-marketing": 2
+          }
+        },
+        {
+          "text": "作品很有美感、辨識度很高的人",
+          "scores": {
+            "commercial-design": 2
+          }
+        },
+        {
+          "text": "站在鏡頭前很有魅力、內容很有記憶點的人",
+          "scores": {
+            "multimedia": 2
+          }
+        },
+        {
+          "text": "很會用數據跟邏輯解決問題的人",
+          "scores": {
+            "ai-data": 2
+          }
+        },
+        {
+          "text": "把複雜事情變簡單有效率的人",
+          "scores": {
+            "automation": 2
+          }
+        }
+      ]
+    }
+  ],
+  "results": {
+    "ai-data": {
+      "name": "人工智慧與資料分析",
+      "tagline": "邏輯拆解派",
+      "weight": 5
+    },
+    "web-dev": {
+      "name": "網站開發",
+      "tagline": "動手實作派",
+      "weight": 5
+    },
+    "product-design": {
+      "name": "產品設計與 UI/UX",
+      "tagline": "使用者洞察派",
+      "weight": 5
+    },
+    "digital-marketing": {
+      "name": "數位行銷",
+      "tagline": "故事包裝派",
+      "weight": 5
+    },
+    "commercial-design": {
+      "name": "商用設計與插畫",
+      "tagline": "美感直覺派",
+      "weight": 5
+    },
+    "multimedia": {
+      "name": "網紅、自媒體與多媒體創作",
+      "tagline": "內容感染派",
+      "weight": 5
+    },
+    "automation": {
+      "name": "AI 高效自動化應用",
+      "tagline": "流程優化派",
+      "weight": 5
+    }
+  }
+}

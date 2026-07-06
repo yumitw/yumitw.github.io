@@ -19,6 +19,7 @@
     <lastmod>2026-07-07</lastmod>
     <image:image><image:loc>https://DOMAIN_PLACEHOLDER/images/quizzes/dog-personality-og.png</image:loc></image:image>
   </url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/quizzes/career-path/</loc><lastmod>2026-07-07</lastmod></url>
   <url>
     <loc>https://DOMAIN_PLACEHOLDER/results/orange-cat/</loc>
     <lastmod>2026-07-07</lastmod>
@@ -89,6 +90,13 @@
   <url><loc>https://DOMAIN_PLACEHOLDER/results/chihuahua/</loc><lastmod>2026-07-07</lastmod></url>
   <url><loc>https://DOMAIN_PLACEHOLDER/results/dachshund/</loc><lastmod>2026-07-07</lastmod></url>
   <url><loc>https://DOMAIN_PLACEHOLDER/results/mix-breed/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-ai-data/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-web-dev/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-product-design/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-digital-marketing/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-commercial-design/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-multimedia/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://DOMAIN_PLACEHOLDER/results/career-automation/</loc><lastmod>2026-07-07</lastmod></url>
   <url>
     <loc>https://DOMAIN_PLACEHOLDER/articles/</loc>
     <lastmod>2026-07-07</lastmod>

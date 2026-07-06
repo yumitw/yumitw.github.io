@@ -117,6 +117,23 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - **結果頁 → 文章**:22 個結果頁的「其他人格」清單下方新增「📚 延伸閱讀」區塊,貓頁連回 `cat-personality-types-guide` + `cat-quiz-friend-pairing`,狗頁連回 `dog-personality-types-guide` + `dog-social-style-guide`。
 - 腳本:`link_and_enrich.py`(已跑過,冪等 — 已有「延伸閱讀」的頁面會跳過);若之後新增文章想比照辦理,邏輯可重用。
 
+## 第 3 個測驗:「你適合學什麼?」(2026-07-07 已上線)
+
+**性質與前兩個測驗不同**:這不是娛樂性人格測驗,是導購型性向測驗——測出使用者適合 7 大領域(人工智慧與資料分析、網站開發、產品設計/UIUX、數位行銷、商用設計與插畫、網紅多媒體、AI 高效自動化應用)中的哪一個,結果頁導向**第三方課程平台的推廣/聯盟連結**。
+
+**關鍵決策**:加進本站當第 3 個測驗(沿用既有 quizzes/results 架構);目的是導流去課程報名,結果頁有 CTA;課程是別人的平台,我們是推廣方(聯盟性質)。
+
+**已完成**:
+- [x] 12 題性向測驗題目(草稿→計分平衡驗算→修訂三階段),7 領域理論最高分落差收斂在 2 分內,每領域至少出現 7 次以上
+- [x] 7 個結果頁完整內容(intro/為什麼適合你 3 點/可學技能 5-7 條/互補領域推薦/CTA),經審稿確認 whatYouLearn 皆有課程原文根據且非逐句照抄,無銷售話術用詞
+- [x] 結果頁 slug 前綴 `career-`,避免跟既有貓狗結果頁混淆
+- [x] 每個結果頁 CTA 旁都有推廣/聯盟揭露聲明(誠實揭露+不影響測驗公正性,符合法規與 AdSense 政策要求)
+- [x] robots.txt 加 `Disallow: /quizzes/career-path/play/`;sitemap.xml 補 9 個新網址;首頁/測驗總覽新增「🧭 性向測驗」獨立分區
+- [x] 端對端測試通過:12 題作答 → 正確導向對應結果頁 → 祝賀橫幅、CTA、揭露聲明、互補領域連結皆正常顯示
+
+**待辦(卡在使用者)**:
+- [ ] **提供 7 個領域各自的實際課程連結網址**,取代目前的 `COURSE_LINK_PLACEHOLDER__<slug>` 佔位(slug:ai-data/web-dev/product-design/digital-marketing/commercial-design/multimedia/automation),CTA 按鈕才能真正導流
+
 ## 追蹤碼現況
 
 - StatCounter(project 13334396):全站隱形計數(`sc_invisible=1`),已移除公開的「查看訪客統計」連結。
