@@ -115,11 +115,31 @@
     return best ? best.type : Object.keys(quiz.results)[0];
   }
 
+  // 次高分型別(僅供 cfg.includeSecondary 的測驗用,附加在導向網址上,
+  // 讓結果頁能顯示「雙核心組合」;不影響其他測驗的既有行為)
+  function computeSecondary(primaryType) {
+    var best = null;
+    Object.keys(totals).forEach(function (type) {
+      if (type === primaryType || !quiz.results[type]) return;
+      var score = totals[type];
+      var weight = quiz.results[type].weight || 0;
+      if (!best || score > best.score || (score === best.score && weight > best.weight)) {
+        best = { type: type, score: score, weight: weight };
+      }
+    });
+    return best ? best.type : null;
+  }
+
   function finish(type) {
     var slug = (cfg.slugs || {})[type];
     if (slug && (cfg.readySlugs || []).indexOf(slug) !== -1) {
       // 靜態結果頁已上線 → 直接導過去(用 replace,返回鍵不會回到空白答題頁)
-      location.replace(cfg.resultBase + slug + "/?from=quiz");
+      var url = cfg.resultBase + slug + "/?from=quiz";
+      if (cfg.includeSecondary) {
+        var secondary = computeSecondary(type);
+        if (secondary) url += "&secondary=" + secondary;
+      }
+      location.replace(url);
       return;
     }
     showFallbackResult(type); // 過渡期:結果頁還沒建好時,先在頁內顯示

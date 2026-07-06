@@ -99,6 +99,8 @@
 | dachshund | 臘腸 | 好奇挖掘機 | 棕色長身臘腸、好奇 |
 | mix-breed | 米克斯 | 野生生活家 | 米克斯混色、自在隨性 |
 
+狀態:2026-07-07 已完成 10 張,並已接進各自結果頁與 sitemap.xml。**Tier 2 全部完成(22/22)**。
+
 ---
 
 ## Tier 3 — 選配(文章圖,6 篇)
@@ -115,8 +117,34 @@
 
 ---
 
+## Tier 4 — 選配(第 3 個測驗「你適合學什麼?」,8 張,2026-07-07 新增)
+
+目前這 8 頁(測驗介紹頁 + 7 個領域結果頁)都用預設圖 `images/og-default.png`,結果頁上的視覺是純 emoji(🤖💻🧭📣🎨🎬⚙️)不是插畫,風格跟貓狗測驗不同,暫緩製作專屬圖,優先順序低於**提供課程連結**這件事。若之後想做,路徑一律 `images/results/career-<slug>-og.png`,主題建議走「職場/學習情境插畫」而非可愛動物插畫,slug 對照 Tier 2 表格上方的 7 大領域。
+
+---
+
 ## 做完後要告訴我的事
 
 1. Tier 0 放好 → 全站分享縮圖與圖示就完整了(這是送 AdSense 前最該先做的)。
 2. 若做了 Tier 1/2/3 的專屬圖 → **把完成的 slug 列給我**,我會把那些頁的 `og:image` 從預設圖切成專屬圖(順便補 `alt`)。
 3. 圖片放好後我會再跑一次連結/圖片檢查,確認沒有 404。
+
+---
+
+## Tier 5 — 選配(career-path 測驗 7 隻動物角色插畫,2026-07-07 新增)
+
+站長已提供完整產圖 prompt(見 `E:\心理測驗製作\files\動物產圖prompt.md`)與升級規格(`career-path-升級規格.md`)。頁面已改用 `<img>` + `onerror` fallback 到 emoji 圓框(跟財富引擎測驗同一套 fallback 邏輯),**圖片沒放也不會破版**,不影響上線。
+
+路徑統一 `images/career/<檔名>`,尺寸 16:9,風格延續貓貓狗狗的精緻厚塗半寫實動漫風、米色療癒場景、暖金光。
+
+| 檔名 | 領域 slug | 動物 |
+|---|---|---|
+| `career_ai-data_raccoon.png` | ai-data | 🦝 浣熊 |
+| `career_web-dev_dino.png` | web-dev | 🦕 小恐龍 |
+| `career_product-design_dolphin.png` | product-design | 🐬 海豚 |
+| `career_digital-marketing_fox.png` | digital-marketing | 🦊 狐狸 |
+| `career_commercial-design_chameleon.png` | commercial-design | 🦎 變色龍 |
+| `career_multimedia_otter.png` | multimedia | 🦦 水獺 |
+| `career_automation_octopus.png` | automation | 🐙 章魚 |
+
+放好後不用告訴我路徑,fallback 機制會自動偵測圖片存在就顯示、不存在就退回 emoji,不需要我再改程式碼。

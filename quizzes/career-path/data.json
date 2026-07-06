@@ -22,7 +22,7 @@
           }
         },
         {
-          "text": "算了,寫個小工具繞過這個爛設計比較快",
+          "text": "算了,乾脆找個現成工具或撇步繞過它",
           "scores": {
             "automation": 2
           }
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "text": "朋友傳了一份亂七八糟的 Excel 資料給你,你會?",
+      "text": "朋友丟給你一份超亂的名單或表格(一堆重複、格式全亂),你會?",
       "options": [
         {
           "text": "手癢想寫個程式把它整理分析一遍",
@@ -305,7 +305,7 @@
       "text": "老闆丟給你一句「幫我把這個流程弄快一點」,你會怎麼想?",
       "options": [
         {
-          "text": "找幾個工具串起來,讓它自己跑",
+          "text": "找方法讓它自己跑,不用每次手動",
           "scores": {
             "automation": 2
           }
@@ -384,37 +384,58 @@
     "ai-data": {
       "name": "人工智慧與資料分析",
       "tagline": "邏輯拆解派",
-      "weight": 5
+      "weight": 5,
+      "animal": "浣熊",
+      "animalEmoji": "🦝",
+      "animalTitle": "邏輯拆解浣熊"
     },
     "web-dev": {
       "name": "網站開發",
       "tagline": "動手實作派",
-      "weight": 5
+      "weight": 5,
+      "animal": "小恐龍",
+      "animalEmoji": "🦕",
+      "animalTitle": "動手實作小恐龍"
     },
     "product-design": {
       "name": "產品設計與 UI/UX",
       "tagline": "使用者洞察派",
-      "weight": 5
+      "weight": 5,
+      "animal": "海豚",
+      "animalEmoji": "🐬",
+      "animalTitle": "使用者洞察海豚"
     },
     "digital-marketing": {
       "name": "數位行銷",
       "tagline": "故事包裝派",
-      "weight": 5
+      "weight": 5,
+      "animal": "狐狸",
+      "animalEmoji": "🦊",
+      "animalTitle": "故事包裝狐狸"
     },
     "commercial-design": {
       "name": "商用設計與插畫",
       "tagline": "美感直覺派",
-      "weight": 5
+      "weight": 5,
+      "animal": "變色龍",
+      "animalEmoji": "🦎",
+      "animalTitle": "美感手感變色龍"
     },
     "multimedia": {
       "name": "網紅、自媒體與多媒體創作",
       "tagline": "內容感染派",
-      "weight": 5
+      "weight": 5,
+      "animal": "水獺",
+      "animalEmoji": "🦦",
+      "animalTitle": "內容感染水獺"
     },
     "automation": {
       "name": "AI 高效自動化應用",
       "tagline": "流程優化派",
-      "weight": 5
+      "weight": 5,
+      "animal": "章魚",
+      "animalEmoji": "🐙",
+      "animalTitle": "流程優化章魚"
     }
   }
 }

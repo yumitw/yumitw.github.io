@@ -3,5 +3,6 @@ Allow: /
 Disallow: /quizzes/cat-personality/play/
 Disallow: /quizzes/dog-personality/play/
 Disallow: /quizzes/career-path/play/
+Disallow: /quizzes/wealth-engine/play/
 
 Sitemap: https://DOMAIN_PLACEHOLDER/sitemap.xml

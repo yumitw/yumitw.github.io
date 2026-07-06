@@ -131,8 +131,37 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - [x] robots.txt 加 `Disallow: /quizzes/career-path/play/`;sitemap.xml 補 9 個新網址;首頁/測驗總覽新增「🧭 性向測驗」獨立分區
 - [x] 端對端測試通過:12 題作答 → 正確導向對應結果頁 → 祝賀橫幅、CTA、揭露聲明、互補領域連結皆正常顯示
 
+**2026-07-07 動物角色升級**(依站長 `career-path-升級規格.md`):
+- [x] 7 領域擬人化成 7 種動物(浣熊/小恐龍/海豚/狐狸/變色龍/水獺/章魚),不與貓狗測驗或財富引擎測驗(松鼠/河狸/貓頭鷹/孔雀/蜜蜂/螞蟻/火烈鳥/烏龜)的動物重複
+- [x] data.json 的 7 個 result 補上 `animal` / `animalEmoji` / `animalTitle` 欄位
+- [x] 結果頁新增:角色卡(圖片+onerror fallback 到 emoji 圓框,同財富引擎測驗的 fallback 邏輯)、命中感標語(hookLine)、星等特質(沿用 `.rating-block` 共用元件)、你的天生優勢(3 條)、也要注意的地方(溫柔提醒)、毛毛小結(角色口吻收尾),原有內容全部保留
+- [x] 3 題用字微調(Excel→名單/表格、寫小工具→現成工具、找工具串起來→找方法自動跑),計分權重不變
+- [x] 測驗介紹頁 7 大領域預覽 chip 改成動物 emoji+角色名;結果頁「其他領域」chip 同步更新
+- [x] CSS 新增 `.career-portrait`/`.career-portrait-fallback`/`.blindspot-box`/`.mimo-note`,沿用既有米色+蜂蜜焦糖色票,未開新色
+- [x] 端對端重測:12 題(含微調後題目)作答 → 正確導向結果頁 → fallback emoji、星等、優勢/盲點/毛毛小結皆正常顯示
+
 **待辦(卡在使用者)**:
 - [ ] **提供 7 個領域各自的實際課程連結網址**,取代目前的 `COURSE_LINK_PLACEHOLDER__<slug>` 佔位(slug:ai-data/web-dev/product-design/digital-marketing/commercial-design/multimedia/automation),CTA 按鈕才能真正導流
+- [ ] (選)7 隻動物插畫,規格見 `docs/content-kit/image-manifest.md` Tier 5 —— 圖沒放也不影響上線,fallback 會自動處理
+
+## 第 4 個測驗:「你的隱藏財富引擎是什麼?」(2026-07-07 已上線)
+
+**內容來源**:站長在 `E:\心理測驗製作\Passive income\` 準備好完整內容(20 題 quizData.js、8 人格 personas.js、主副型組合 combinations.js、圖片規範 ART_DIRECTION.md)。原始 README 是照 React SPA(Vite)寫的規格,與本站實際的靜態多頁架構(AdSense 送審用)不符——**已與站長確認,選擇整合進現有靜態站**當第 4 個測驗,沿用 quizzes/results 架構,而非另起一個獨立 React app。
+
+**性質**:娛樂向財富人格測驗(定位「進階/大人版」,同貓狗家族但排版更沉穩),不含課程推廣連結,無需揭露聲明。8 種財富人格:穩健資產家/數位工匠/知識出版家/流量放大器/社群主理人/系統建築師/版權收藏家/實體經營家,分別對應松鼠/河狸/貓頭鷹/孔雀/蜜蜂/螞蟻/火烈鳥/烏龜。
+
+**主副型雙核心機制**:原始設計是取分數最高(主型)與次高(副型)人格,兩者組合成「雙核心」建議。為了不破壞既有 `js/play.js` 共用引擎(貓/狗/career 三個測驗都在用),用**加法式**擴充:新增 `computeSecondary()` 與 `cfg.includeSecondary` 開關(預設不啟用,舊測驗行為不受影響),啟用時導向結果頁網址會多帶 `&secondary=Px`;結果頁用新檔 `js/wealth-data.js`(含 8 手寫組合 + 其餘自動合成邏輯,port 自 combinations.js)在偵測到 `secondary` 參數時,才動態補上頁面上原本 `hidden` 的「雙核心組合」區塊。靜態頁本身(無 query string 時)仍是完整可索引的單一人格內容,不影響 SEO。
+
+**已完成**:
+- [x] 20 題完整移植自 quizData.js(6 選項制,含 P1–P8 加分與 6 個維度軸,維度軸分數會被計分引擎忽略,僅原始資料保留)
+- [x] 8 個結果頁完整內容:為什麼適合你、5 種變現方法、依 5 級預算門檻的做法、3 項星等(被動程度/前期投入/後續維護,用●○呈現)、預期第一筆收入速度、最容易踩的陷阱、七日行動建議、不適合的方向、雙核心組合區塊
+- [x] 結果頁 slug 前綴 `wealth-`(wealth-squirrel ~ wealth-turtle),避免跟既有貓狗/career 結果頁混淆
+- [x] robots.txt 加 `Disallow: /quizzes/wealth-engine/play/`;sitemap.xml 補 9 個新網址;首頁/測驗總覽新增「💰 財富人格測驗」獨立分區 + 首頁 8 人格 chip 預覽
+- [x] 圖片:ART_DIRECTION.md 規劃的插畫尚未產出,比照 career 測驗前例先用 emoji 直接當 result-art(非 fallback 機制),og:image 用全站 `/images/og-default.png`;待站長依 ART_DIRECTION.md 產出 9~18 張插畫後,再切換成 `<img>` + emoji fallback
+
+**待辦**:
+- [ ] 本機瀏覽器端對端測試:20 題作答 → 正確導向結果頁 → 雙核心組合、分享、再測一次皆正常顯示
+- [ ] (可選,卡在使用者)依 `Passive income/ART_DIRECTION.md` 產出首頁 hero + 8 人格插畫,之後我可以接上 `<img>` + emoji fallback
 
 ## 追蹤碼現況
 

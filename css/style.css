@@ -359,6 +359,53 @@ a.chip:hover, a.chip:active { border-color: var(--accent); transform: scale(0.98
 /* 廣告版位(通過審查後才會放進 <ins> 廣告單元) */
 .ad-slot { margin: 24px 0; text-align: center; }
 
+/* 星等/程度指標(隱藏財富引擎測驗用) */
+.rating-block { display: flex; flex-direction: column; gap: 8px; margin: 12px 0; }
+.rating-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.rating-label { font-size: 0.95rem; color: var(--cocoa-light); }
+.rating-dots { font-size: 1.1rem; letter-spacing: 2px; color: var(--milk-tea-dark); }
+
+/* 主副型組合區塊 */
+.combo-box h3 { font-size: 1.05rem; color: var(--milk-tea-dark); margin-bottom: 6px; }
+.combo-box ul { margin: 8px 0 0 20px; }
+
+/* career 性向測驗動物角色卡(圖片未就位時 fallback 到 emoji 圓框) */
+.career-portrait { width: 200px; height: 200px; margin: 0 auto 12px; position: relative; }
+.career-portrait img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; box-shadow: var(--shadow); }
+.career-portrait-fallback {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--bg-deep);
+  border: 3px solid var(--milk-tea);
+  align-items: center;
+  justify-content: center;
+  font-size: 92px;
+  line-height: 1;
+  box-shadow: var(--shadow);
+}
+
+/* 溫柔提醒盒(也要注意的地方) */
+.blindspot-box {
+  background: var(--bg);
+  border: 1.5px dashed var(--milk-tea);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin: 10px 0 16px;
+}
+.blindspot-box p { margin: 0; }
+
+/* 毛毛小結(角色口吻收尾) */
+.mimo-note {
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 16px 0;
+  font-size: 0.92rem;
+  color: var(--cocoa-light);
+  font-style: italic;
+}
+
 /* ===== 其他 ===== */
 .error-box { text-align: center; color: var(--rival); padding: 40px 0; }
 
