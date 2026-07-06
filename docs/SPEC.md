@@ -72,13 +72,14 @@ russian→russian-blue, tuxedo→tuxedo-cat
 
 ## 送審前檢查清單
 
-- [ ] 文章與圖片製作規格已依 `docs/content-kit/README.md` 執行
-- [x] 12 個結果頁全數上線,`readySlugs` 補齊 12 個
-- [x] 文章至少 6 篇(各自主題,不可模板換詞)
-- [x] 狗狗測驗上線(介紹頁 + play + 結果頁)
-- [ ] 每頁獨立 title / description / canonical / og:url
-- [ ] OG 分享圖 1200×630(images/results/<slug>-og.png)——尚未製作
-- [ ] sitemap.xml 補齊所有正式頁面(不含 play/、404)
+- [x] 12 個貓結果頁 + 10 個狗結果頁全數上線,兩份 `readySlugs` 皆同步
+- [x] 文章 6 篇(各自主題,不模板換詞)
+- [x] 狗狗測驗上線(介紹頁 + play + 10 結果頁)
+- [x] 每頁獨立 title / description / canonical / og:url(稽核零缺漏)
+- [x] 全站 og:image / Twitter card / JSON-LD / favicon / manifest(meta-kit 注入,65 塊結構化資料通過解析)
+- [x] sitemap.xml 收錄所有正式頁面(不含 play/、404),與實體檔一致
+- [x] 站內連結稽核:零壞連結
+- [ ] **圖片:依 `docs/content-kit/image-manifest.md` 產生**(Tier 0 的 4 張為送審前必做)
 - [ ] Google Search Console:驗證網域、提交 sitemap、抽查 5 頁「網址檢查」確認可索引
 - [ ] 手機實測:無載入卡住、無壞連結、無「敬請期待」空頁
 - [ ] 等主要頁面進索引(約 1-2 週)→ AdSense 按「要求審查」
@@ -86,15 +87,23 @@ russian→russian-blue, tuxedo→tuxedo-cat
 ## 待辦(依序)
 
 1. ✅ 骨架:新結構、首頁、測驗介紹頁、答題頁、robots/ads/sitemap/404
-2. ⏳ 範本審稿:橘貓結果頁 + 計分文章 + 政策四頁 + 狗狗測驗草案(站長審)
-3. ⬜ 風格定稿後:其餘 11 個結果頁、其餘文章(5+ 篇)
-4. ⬜ 狗狗測驗建置(含 dogSVG 插圖產生器)
-5. ⬜ OG 分享圖批次產生
-6. ⬜ 網域購買 → set-domain → DNS → push 上線
-7. ⬜ 舊 cat-quiz repo 轉址頁
-8. ⬜ Search Console 驗證 + 提交 sitemap
-9. ⬜ (選)GA4 取代/並行 StatCounter,追蹤 quiz_start / quiz_complete / result_share
-10. ⬜ 索引確認後重新送審 AdSense
+2. ✅ 內容:12 貓 + 10 狗結果頁、6 篇文章、政策四頁(站長已補齊)
+3. ✅ 狗狗測驗建置(含 dogSVG 插圖產生器)
+4. ✅ 架構強化 meta-kit:og:image / Twitter card / JSON-LD / favicon / manifest 全站注入
+5. ⏳ 圖片產生(站長,依 `docs/content-kit/image-manifest.md`):Tier 0 四張必做;產專屬圖後告知 slug,我把該頁 og:image 切換
+6. ⬜ (選)狗結果頁文案補深至貓頁水準(目前狗頁合併感情/友情/職場/壓力為一段,字數約少 30%)
+7. ⬜ 網域購買 → set-domain → DNS → push 上線
+8. ⬜ 舊 cat-quiz repo 轉址頁(等網域定案後產生)
+9. ⬜ Search Console 驗證 + 提交 sitemap
+10. ⬜ (選)GA4 取代/並行 StatCounter,追蹤 quiz_start / quiz_complete / result_share
+11. ⬜ 索引確認後重新送審 AdSense
+
+## 架構強化紀錄(meta-kit)
+
+- 由 scratchpad 的 `inject_meta.py` 一次注入全站,冪等(靠 `<!-- meta-kit -->` 標記,重跑先移除再重建)。
+- og:image 目前全指向 `/images/og-default.png`;要把某頁換成專屬圖,在 `inject_meta.py` 的 `PER_PAGE_OG` 加該頁 url 再重跑即可。
+- JSON-LD:首頁 WebSite;結果頁與文章頁 Article;兩個測驗介紹頁 FAQPage;有麵包屑的頁面 BreadcrumbList。
+- favicon.svg 為自製向量肉球圖示;iOS/Android 點陣圖示待 `image-manifest.md` Tier 0 產生。
 
 ## 追蹤碼現況
 
