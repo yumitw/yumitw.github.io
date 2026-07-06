@@ -72,9 +72,10 @@ russian→russian-blue, tuxedo→tuxedo-cat
 
 ## 送審前檢查清單
 
-- [ ] 12 個結果頁全數上線,`readySlugs` 補齊 12 個
-- [ ] 文章至少 6 篇(各自主題,不可模板換詞)
-- [ ] 狗狗測驗上線(介紹頁 + play + 結果頁)
+- [ ] 文章與圖片製作規格已依 `docs/content-kit/README.md` 執行
+- [x] 12 個結果頁全數上線,`readySlugs` 補齊 12 個
+- [x] 文章至少 6 篇(各自主題,不可模板換詞)
+- [x] 狗狗測驗上線(介紹頁 + play + 結果頁)
 - [ ] 每頁獨立 title / description / canonical / og:url
 - [ ] OG 分享圖 1200×630(images/results/<slug>-og.png)——尚未製作
 - [ ] sitemap.xml 補齊所有正式頁面(不含 play/、404)

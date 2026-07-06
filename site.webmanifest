@@ -1,0 +1,15 @@
+{
+  "name": "毛毛心理測驗所",
+  "short_name": "毛毛測驗",
+  "description": "原創趣味心理測驗:測出你的貓咪與狗狗人格,附好朋友與相剋配對。",
+  "lang": "zh-Hant",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6EEE3",
+  "theme_color": "#E8A87C",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any", "purpose": "any" },
+    { "src": "/images/icons/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/images/icons/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}
