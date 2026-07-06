@@ -164,8 +164,15 @@ russian→russian-blue, tuxedo→tuxedo-cat
 **已完成(續)**:
 - [x] 本機瀏覽器端對端測試:20 題作答 → 正確導向 wealth-squirrel、帶 `secondary=P8` → 雙核心組合區塊正確顯示「穩健資產家 × 實體經營家」;直接訪問結果頁(無 query string)時橫幅與組合區塊皆正確隱藏;確認貓測驗共用的 `js/play.js` 行為未受影響(無 regression)
 
+**2026-07-07 插畫上線(第一批)**:
+- [x] 站長於 `Passive income/public/images/` 提供 5 張圖(hero.png + p1_squirrel/p2_beaver/p3_owl/p4_peacock),已搬進 `images/wealth/`,接上 `<img>` + `onerror` fallback(同 career-path Tier 5 那套邏輯):測驗介紹頁用新 class `.wealth-hero`,結果頁用 `.wealth-portrait`(16:9 橫幅,不是 career 的圓形頭像,因為插畫背景細節豐富,裁圓會裁掉大半場景)
+- [x] 8 個結果頁的 markup 統一先套用 img+fallback(即使圖還沒到,onerror 會自動退回 emoji),之後補圖不需要再改程式碼,直接把檔案放進 `images/wealth/` 即可
+- [x] 瀏覽器驗證:squirrel/beaver/owl/peacock 圖片正確顯示;bee(尚無圖)實測 `naturalWidth:0` 觸發 onerror,fallback emoji 正確浮現
+- [x] 詳細清單見 `docs/content-kit/image-manifest.md` Tier 6
+
 **待辦**:
-- [ ] (可選,卡在使用者)依 `Passive income/ART_DIRECTION.md` 產出首頁 hero + 8 人格插畫,之後我可以接上 `<img>` + emoji fallback
+- [ ] (可選,卡在使用者)蜜蜂/螞蟻/火烈鳥/烏龜 4 張人格插畫 —— 圖沒放也不影響上線,fallback 會自動處理
+- [ ] og:image 是否要切到專屬插畫,待 8 張全部到齊後再評估(目前原圖 16:9 跟建議的 og 尺寸不完全一致)
 
 ## 追蹤碼現況
 

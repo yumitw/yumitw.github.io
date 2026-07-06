@@ -148,3 +148,23 @@
 | `career_automation_octopus.png` | automation | 🐙 章魚 |
 
 放好後不用告訴我路徑,fallback 機制會自動偵測圖片存在就顯示、不存在就退回 emoji,不需要我再改程式碼。
+
+---
+
+## Tier 6 — 財富引擎測驗插畫(首頁 hero + 8 人格,2026-07-07 開始上線)
+
+站長在 `E:\心理測驗製作\Passive income\public\images\` 準備圖,規格見同資料夾的 `ART_DIRECTION.md`。已比照 career-path 的 `<img>` + `onerror` fallback 邏輯接上:圖片路徑統一 `images/wealth/<檔名>`,結果頁用 `.wealth-portrait`(16:9 橫幅,fallback 大 emoji)、測驗介紹頁用 `.wealth-hero`。**放好圖片後不用告訴我路徑,fallback 機制會自動偵測**,跟 Tier 5 邏輯一致。
+
+| 檔名 | 用途 / 人格 | 動物 | 狀態 |
+|---|---|---|---|
+| `hero.png` | 測驗介紹頁主視覺 | — | ✅ 已上線 |
+| `p1_squirrel.png` | 穩健資產家 | 🐿️ 松鼠 | ✅ 已上線 |
+| `p2_beaver.png` | 數位工匠 | 🦫 河狸 | ✅ 已上線 |
+| `p3_owl.png` | 知識出版家 | 🦉 貓頭鷹 | ✅ 已上線 |
+| `p4_peacock.png` | 流量放大器 | 🦚 孔雀 | ✅ 已上線 |
+| `p5_bee.png` | 社群主理人 | 🐝 蜜蜂 | ⬜ 待補(目前顯示 emoji fallback) |
+| `p6_ant.png` | 系統建築師 | 🐜 螞蟻 | ⬜ 待補 |
+| `p7_flamingo.png` | 版權收藏家 | 🦩 火烈鳥 | ⬜ 待補 |
+| `p8_turtle.png` | 實體經營家 | 🐢 烏龜 | ⬜ 待補 |
+
+og:image 暫時維持 `images/og-default.png`(尺寸 1200×630),尚未切到專屬插畫,因為原圖是 16:9 約 1672×941,跟建議的分享圖尺寸不完全一致;等 8 張全部到齊後再一次評估要不要裁切出專屬 og 版本。

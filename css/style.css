@@ -385,6 +385,34 @@ a.chip:hover, a.chip:active { border-color: var(--accent); transform: scale(0.98
   box-shadow: var(--shadow);
 }
 
+/* 財富引擎測驗人格插畫大圖(橫幅,圖片未就位時 fallback 到 emoji 圓框) */
+.wealth-portrait { width: 100%; margin: 0 auto 16px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 16 / 9; }
+.wealth-portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.wealth-portrait-fallback {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-deep);
+  border: 3px solid var(--milk-tea);
+  align-items: center;
+  justify-content: center;
+  font-size: 88px;
+  line-height: 1;
+}
+
+/* 財富引擎測驗介紹頁主視覺(同一套 fallback 邏輯) */
+.wealth-hero { width: 100%; max-width: 420px; margin: 0 auto 16px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 16 / 9; }
+.wealth-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.wealth-hero-fallback {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-deep);
+  border: 3px solid var(--milk-tea);
+  align-items: center;
+  justify-content: center;
+  font-size: 88px;
+  line-height: 1;
+}
+
 /* 溫柔提醒盒(也要注意的地方) */
 .blindspot-box {
   background: var(--bg);
