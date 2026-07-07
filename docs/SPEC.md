@@ -153,7 +153,8 @@ russian→russian-blue, tuxedo→tuxedo-cat
 
 **待辦(卡在使用者)**:
 - [x] **career-ai-data(人工智慧與資料分析)已接上第一個真實課程連結**:站長透過 Affiliates.One(聯盟網)取得追蹤連結 `https://onelink.one/s/d2LJa`,解析後導向 Hahow 一門 `category=programming` 的 AI 入門課程,判斷跟 ai-data 領域最match,已換回 CTA 按鈕(含 `rel="sponsored noopener"` 與推廣揭露文字)。若實際想對應到「AI 高效自動化應用」而非「人工智慧與資料分析」,跟我說一聲改一行網址就好
-- [ ] **其餘 6 個領域(網站開發/產品設計UIUX/數位行銷/商用設計插畫/網紅多媒體/AI自動化)還是「🚧 課程連結準備中」佔位文字**,等站長陸續申請到對應課程的推廣連結再換上
+- [x] **product-design(使用者洞察海豚)、commercial-design(美感手感變色龍)、multimedia(內容感染水獺)也已接上真實課程連結**,做法同上(按鈕+`rel="sponsored noopener"`+推廣揭露文字)
+- [ ] **剩 web-dev(動手實作小恐龍)、automation(流程優化章魚)2 個領域還是「🚧 課程連結準備中」佔位文字**,等站長申請到對應課程的推廣連結再換上。7 個裡已完成 5 個
 - [x] **2026-07-07 7 隻動物插畫全部上線**:站長把圖放進 `images/drafts/2026-07-07/career-path/`(10 張,含 2 張「wrong-animals」廢稿),我從中選出 7 隻正確動物 + 1 張總覽圖搬到正式路徑(`images/career/career_<slug>_<animal>.png`),onerror fallback 自動偵測顯示,沒改任何程式碼。總覽圖裁成 1200×630 存為 `images/quizzes/career-path-og.png`,接上測驗介紹頁 og:image 與首頁/測驗總覽的插畫橫幅(取代原本的 🧭 emoji 漸層底);7 個結果頁的 og:image 也從預設圖切到各自的動物插畫裁切版,sitemap.xml 補齊 8 處 `image:image`。詳見 `docs/content-kit/image-manifest.md` Tier 5。
 
 ## 第 4 個測驗:「你的隱藏財富引擎是什麼?」(2026-07-07 已上線)
