@@ -153,6 +153,10 @@
 
 **7 個結果頁 og:image 也已切換**:用同一套 Pillow 置中裁切邏輯,從 7 張動物插畫產生 `images/results/career-<slug>-og.png`,取代原本的預設圖;sitemap.xml 已補上對應 `image:image`(測驗介紹頁 + 7 個結果頁共 8 處)。
 
+**2026-07-07 修正:結果頁插畫不要裁圓**——站長回報結果頁圖片被裁成圓形頭像、測驗介紹頁沒有封面圖。原因:`.career-portrait` CSS 是 200×200 圓形裁切,跟貓狗結果頁後來改用的 `.result-hero`(滿版橫幅、不裁切)不一致;測驗介紹頁的 `start-art` 那時還是 7 個 emoji 排列,沒有接上總覽圖。修正:
+- `.career-portrait` 改成跟 `.result-hero` 同款的滿版橫幅(蓋掉卡片左右邊距、只圓上緣、`height:auto` 顯示完整圖片不裁切),只改 CSS,7 個結果頁的 HTML 完全不用動
+- 測驗介紹頁新增 `.career-hero` class,把 emoji 排列換成 `images/career/career-path-overview.png`(總覽圖的完整未裁切版,跟裁成 1200×630 給 og:image 用的版本是分開兩份檔案)
+
 ---
 
 ## Tier 6 — 財富引擎測驗插畫(首頁 hero + 8 人格,2026-07-07 開始上線)
