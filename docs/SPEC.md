@@ -99,11 +99,11 @@ russian→russian-blue, tuxedo→tuxedo-cat
 8. ✅ sitemap.xml 補 lastmod 與 image sitemap 擴充
 9. ⬜ 圖片 Tier 1/2/3:狗狗結果頁 10 張、文章圖 6 張(站長生成中)
 10. ✅ **2026-07-07 決定先不買新網域**,改用既有 `yumitw.github.io` 上線(DOMAIN_PLACEHOLDER 已替換、未產生 CNAME);career-path 的 7 個課程 CTA 暫時換成「準備中」文字,避免死連結
-11. ⬜ push `revamp` → `main`,讓 yumitw.github.io 正式更新(目前 main 還是舊版單頁,revamp 領先 9 個 commit)
+11. ✅ **持續 push `revamp` → `main`,yumitw.github.io 已正式更新且持續在跑**(每次改動都同步 commit+push,本機 main/revamp 與 GitHub main 保持一致)
 12. ⬜ 舊 cat-quiz repo(獨立 repo,原本 `/cat-quiz/` 路徑)轉址頁,保住已分享出去的舊連結
-13. ⬜ Search Console 驗證 + 提交 sitemap
+13. ✅ **Impact.com 網站驗證已完成**(`<meta name="impact-site-verification">`,見下方追蹤碼現況);⬜ Search Console 驗證 + 提交 sitemap 還沒做
 14. ⬜ (選)GA4 取代/並行 StatCounter,追蹤 quiz_start / quiz_complete / result_share
-15. ⬜ 拿到課程連結後換回 career-path 的 7 個 CTA 按鈕
+15. ✅ **career-path 7 個課程 CTA 全數換回真實連結**;財富引擎測驗 8 頁中也有 6 頁接上真實課程連結(詳見各測驗小節)
 16. ⬜ 索引確認後重新送審 AdSense(若之後改買自訂網域,要等新網域重新索引穩定才送審)
 
 ## 架構強化紀錄(meta-kit)
@@ -155,7 +155,7 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - [x] **career-ai-data(人工智慧與資料分析)已接上第一個真實課程連結**:站長透過 Affiliates.One(聯盟網)取得追蹤連結 `https://onelink.one/s/d2LJa`,解析後導向 Hahow 一門 `category=programming` 的 AI 入門課程,判斷跟 ai-data 領域最match,已換回 CTA 按鈕(含 `rel="sponsored noopener"` 與推廣揭露文字)。若實際想對應到「AI 高效自動化應用」而非「人工智慧與資料分析」,跟我說一聲改一行網址就好
 - [x] **product-design(使用者洞察海豚)、commercial-design(美感手感變色龍)、multimedia(內容感染水獺)也已接上真實課程連結**,做法同上(按鈕+`rel="sponsored noopener"`+推廣揭露文字)
 - [x] **web-dev(動手實作小恐龍)也已接上真實課程連結**。同批站長也重新提供了 ai-data(邏輯拆解浣熊)的連結(換成不同的 Hahow 課程 ID),判斷是要更新原本第一次接的那個連結,已直接取代
-- [ ] **只剩 automation(流程優化章魚)還是「🚧 課程連結準備中」佔位文字**,7 個裡已完成 6 個
+- [x] **automation(流程優化章魚)也接上了,7 個領域全數完成**——這個是 Coursera 的「AI Automation Engineer with n8n」專項課程,連結走 Impact.com 的追蹤網域(`imp.i384100.net`),不是前 6 個用的 Hahow/聯盟網那條線,確認合法後直接接上。**career-path 課程連結全部到位,不用再等**
 - [x] **2026-07-07 7 隻動物插畫全部上線**:站長把圖放進 `images/drafts/2026-07-07/career-path/`(10 張,含 2 張「wrong-animals」廢稿),我從中選出 7 隻正確動物 + 1 張總覽圖搬到正式路徑(`images/career/career_<slug>_<animal>.png`),onerror fallback 自動偵測顯示,沒改任何程式碼。總覽圖裁成 1200×630 存為 `images/quizzes/career-path-og.png`,接上測驗介紹頁 og:image 與首頁/測驗總覽的插畫橫幅(取代原本的 🧭 emoji 漸層底);7 個結果頁的 og:image 也從預設圖切到各自的動物插畫裁切版,sitemap.xml 補齊 8 處 `image:image`。詳見 `docs/content-kit/image-manifest.md` Tier 5。
 
 ## 第 4 個測驗:「你的隱藏財富引擎是什麼?」(2026-07-07 已上線)
@@ -215,3 +215,5 @@ GitHub Pages 給靜態資源的 `Cache-Control: max-age=600`(10 分鐘)。改過
 
 - StatCounter(project 13334396):全站隱形計數(`sc_invisible=1`),已移除公開的「查看訪客統計」連結。
 - GA4:尚未安裝(需站長建立 GA4 資源後提供評估 ID)。
+- **Impact.com 網站驗證(2026-07-08)**:首頁 `<head>` 加 `<meta name="impact-site-verification" value="5825d2db-08b7-444e-91aa-b00bf91c5dad">`。第一次嘗試用「內文貼文字」的驗證方式沒過,改用標準 meta tag 方式才成功。career-automation 的課程連結(Coursera)就是走這個 Impact.com 網路。
+- **Affiliates.One(聯盟網)網站驗證(2026-07-08)**:首頁 `</body>` 前加 Converly 追蹤腳本(`cdn.adotone.com`,聯盟網底層用 Converly 技術)。career-path 6 個 + 財富引擎 6 個課程連結都是走這個聯盟網/Hahow 的線。
