@@ -125,6 +125,10 @@ body {
   white-space: nowrap;
 }
 
+/* 每頁瀏覽次數(hits.sh,以真實網址當 key,重新進來就累加一次) */
+.page-views { text-align: center; margin: 24px 0 4px; opacity: 0.85; }
+.page-views img { vertical-align: middle; border-radius: 4px; }
+
 /* ===== 頁尾 ===== */
 .site-footer {
   text-align: center;
