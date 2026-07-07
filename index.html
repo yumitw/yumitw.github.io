@@ -41,22 +41,26 @@
       <div class="section-label">🐾 熱門測驗</div>
       <div class="quiz-list">
         <a class="quiz-card" href="/quizzes/cat-personality/">
-          <div class="quiz-card-art" id="cat-art"></div>
-          <div class="quiz-card-body">
-            <div class="quiz-card-title">你是哪種貓咪?</div>
-            <div class="quiz-card-desc">12 題測出你的貓咪人格,還有你的好朋友與相剋組合!</div>
-            <div class="quiz-card-meta">共 12 題・約 2 分鐘・不需註冊</div>
+          <div class="quiz-card-banner"><img src="/images/quizzes/cat-personality-og.png" alt="12 種貓咪聚在咖啡廳" loading="lazy"></div>
+          <div class="quiz-card-inner">
+            <div class="quiz-card-body">
+              <div class="quiz-card-title">你是哪種貓咪?</div>
+              <div class="quiz-card-desc">12 題測出你的貓咪人格,還有你的好朋友與相剋組合!</div>
+              <div class="quiz-card-meta">共 12 題・約 2 分鐘・不需註冊</div>
+            </div>
+            <div class="quiz-card-go">開始</div>
           </div>
-          <div class="quiz-card-go">開始</div>
         </a>
         <a class="quiz-card" href="/quizzes/dog-personality/">
-          <div class="quiz-card-art" id="dog-art"></div>
-          <div class="quiz-card-body">
-            <div class="quiz-card-title">你是哪種狗狗?</div>
-            <div class="quiz-card-desc">12 題測出你的狗狗人格,柴犬的傲嬌還是哈士奇的暴衝?</div>
-            <div class="quiz-card-meta">共 12 題・約 2 分鐘・不需註冊</div>
+          <div class="quiz-card-banner"><img src="/images/quizzes/dog-personality-og.png" alt="10 種狗狗聚在咖啡廳" loading="lazy"></div>
+          <div class="quiz-card-inner">
+            <div class="quiz-card-body">
+              <div class="quiz-card-title">你是哪種狗狗?</div>
+              <div class="quiz-card-desc">12 題測出你的狗狗人格,柴犬的傲嬌還是哈士奇的暴衝?</div>
+              <div class="quiz-card-meta">共 12 題・約 2 分鐘・不需註冊</div>
+            </div>
+            <div class="quiz-card-go">開始</div>
           </div>
-          <div class="quiz-card-go">開始</div>
         </a>
       </div>
     </section>
@@ -65,13 +69,15 @@
       <div class="section-label">🧭 性向測驗</div>
       <div class="quiz-list">
         <a class="quiz-card" href="/quizzes/career-path/">
-          <div class="quiz-card-art" style="display:flex;align-items:center;justify-content:center;font-size:40px;">🧭</div>
-          <div class="quiz-card-body">
-            <div class="quiz-card-title">你適合學什麼?</div>
-            <div class="quiz-card-desc">12 題測出你適合的學習領域,還有能學到的技能!</div>
-            <div class="quiz-card-meta">共 12 題・約 3 分鐘・不需註冊</div>
+          <div class="quiz-card-banner emoji">🧭</div>
+          <div class="quiz-card-inner">
+            <div class="quiz-card-body">
+              <div class="quiz-card-title">你適合學什麼?</div>
+              <div class="quiz-card-desc">12 題測出你適合的學習領域,還有能學到的技能!</div>
+              <div class="quiz-card-meta">共 12 題・約 3 分鐘・不需註冊</div>
+            </div>
+            <div class="quiz-card-go">開始</div>
           </div>
-          <div class="quiz-card-go">開始</div>
         </a>
       </div>
     </section>
@@ -80,13 +86,15 @@
       <div class="section-label">💰 財富人格測驗</div>
       <div class="quiz-list">
         <a class="quiz-card" href="/quizzes/wealth-engine/">
-          <div class="quiz-card-art" style="display:flex;align-items:center;justify-content:center;font-size:40px;">🔮</div>
-          <div class="quiz-card-body">
-            <div class="quiz-card-title">你的隱藏財富引擎是什麼?</div>
-            <div class="quiz-card-desc">20 題測出你天生適合的被動收入方法,還有專屬的預算門檻與行動建議!</div>
-            <div class="quiz-card-meta">共 20 題・約 4 分鐘・不需註冊</div>
+          <div class="quiz-card-banner"><img src="/images/wealth/hero.png" alt="理財小動物在溫暖書房" loading="lazy"></div>
+          <div class="quiz-card-inner">
+            <div class="quiz-card-body">
+              <div class="quiz-card-title">你的隱藏財富引擎是什麼?</div>
+              <div class="quiz-card-desc">20 題測出你天生適合的被動收入方法,還有專屬的預算門檻與行動建議!</div>
+              <div class="quiz-card-meta">共 20 題・約 4 分鐘・不需註冊</div>
+            </div>
+            <div class="quiz-card-go">開始</div>
           </div>
-          <div class="quiz-card-go">開始</div>
         </a>
       </div>
     </section>
@@ -175,11 +183,8 @@
   </main>
 
   <script src="/js/cat-art.js"></script>
-  <script src="/js/dog-art.js"></script>
   <script>
     document.getElementById("site-logo").innerHTML = catSVG(defaultCatArt, "logo");
-    document.getElementById("cat-art").innerHTML = catSVG(defaultCatArt, "card1");
-    document.getElementById("dog-art").innerHTML = dogSVG(defaultDogArt, "card2");
   </script>
 
   <!-- StatCounter(隱形計數) -->
