@@ -225,7 +225,11 @@
   <url><loc>https://yumitw.github.io/articles/cat-quiz-friend-pairing/</loc><lastmod>2026-07-07</lastmod></url>
   <url><loc>https://yumitw.github.io/articles/dog-social-style-guide/</loc><lastmod>2026-07-07</lastmod></url>
   <url><loc>https://yumitw.github.io/articles/how-quiz-scoring-works/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/articles/ai-product-manager-guide/</loc><lastmod>2026-07-08</lastmod></url>
+  <url>
+    <loc>https://yumitw.github.io/articles/ai-product-manager-guide/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/articles/ai-product-manager-guide/og.png</image:loc></image:image>
+  </url>
   <url><loc>https://yumitw.github.io/about/</loc><lastmod>2026-07-06</lastmod></url>
   <url><loc>https://yumitw.github.io/contact/</loc><lastmod>2026-07-06</lastmod></url>
   <url><loc>https://yumitw.github.io/privacy/</loc><lastmod>2026-07-06</lastmod></url>
