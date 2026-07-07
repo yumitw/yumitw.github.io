@@ -156,6 +156,10 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - [x] **product-design(使用者洞察海豚)、commercial-design(美感手感變色龍)、multimedia(內容感染水獺)也已接上真實課程連結**,做法同上(按鈕+`rel="sponsored noopener"`+推廣揭露文字)
 - [x] **web-dev(動手實作小恐龍)也已接上真實課程連結**。同批站長也重新提供了 ai-data(邏輯拆解浣熊)的連結(換成不同的 Hahow 課程 ID),判斷是要更新原本第一次接的那個連結,已直接取代
 - [x] **automation(流程優化章魚)也接上了,7 個領域全數完成**——這個是 Coursera 的「AI Automation Engineer with n8n」專項課程,連結走 Impact.com 的追蹤網域(`imp.i384100.net`),不是前 6 個用的 Hahow/聯盟網那條線,確認合法後直接接上。**career-path 課程連結全部到位,不用再等**
+- [x] **2026-07-08 站長再提供 3 張 Coursera AI 專業證書連結(Google AI、AWS Generative AI、IBM AI Product Manager),但沒標註對應頁面**。跟站長確認處理方式:「加入最相關的,剩下的寫文章」——
+  - Google AI 專業證書 → 加在 career-ai-data 當第二個課程選項(次要按鈕,標明「或看 Google AI 專業證書 →」,跟原本的資料分析課程分開標示避免混淆)
+  - AWS Generative AI and AI Agents 專業證書 → 加在 career-automation 當第二個課程選項,同樣手法
+  - IBM AI Product Manager 專業證書 → 沒有明顯對應的既有頁面,**改寫成全新文章** `articles/ai-product-manager-guide/`(站上第一篇非貓狗主題的文章):解析「AI 產品經理」這個新興職缺實際在做什麼、為什麼這幾年冒出這麼多職缺、適合什麼人、入門怎麼開始,文長 1367 字(站內文章要求 900 字以上),站內連結回 career-path 測驗與 career-product-design/career-ai-data 兩個最相關結果頁,課程連結含推廣揭露文字。已加入 `articles/index.html` 卡片與 `sitemap.xml`
 - [x] **2026-07-07 7 隻動物插畫全部上線**:站長把圖放進 `images/drafts/2026-07-07/career-path/`(10 張,含 2 張「wrong-animals」廢稿),我從中選出 7 隻正確動物 + 1 張總覽圖搬到正式路徑(`images/career/career_<slug>_<animal>.png`),onerror fallback 自動偵測顯示,沒改任何程式碼。總覽圖裁成 1200×630 存為 `images/quizzes/career-path-og.png`,接上測驗介紹頁 og:image 與首頁/測驗總覽的插畫橫幅(取代原本的 🧭 emoji 漸層底);7 個結果頁的 og:image 也從預設圖切到各自的動物插畫裁切版,sitemap.xml 補齊 8 處 `image:image`。詳見 `docs/content-kit/image-manifest.md` Tier 5。
 
 ## 第 4 個測驗:「你的隱藏財富引擎是什麼?」(2026-07-07 已上線)
