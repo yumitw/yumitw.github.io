@@ -183,6 +183,14 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - [ ] (可選,卡在使用者)蜜蜂/螞蟻/火烈鳥/烏龜 4 張人格插畫 —— 圖沒放也不影響上線,fallback 會自動處理
 - [ ] og:image 是否要切到專屬插畫,待 8 張全部到齊後再評估(目前原圖 16:9 跟建議的 og 尺寸不完全一致)
 
+## CSS 快取破壞(cache-busting)慣例(2026-07-07 導入)
+
+GitHub Pages 給靜態資源的 `Cache-Control: max-age=600`(10 分鐘)。改過 CSS 又同時改動 HTML class 結構時,使用者瀏覽器可能抓到「新 HTML + 10 分鐘內快取的舊 CSS」造成破版(2026-07-07 首頁測驗卡改插畫橫幅時實際踩到)。
+
+**根治**:全站 60 個 HTML 的 `<link rel="stylesheet">` 都帶版本查詢字串 `href="/css/style.css?v=YYYYMMDDx"`。瀏覽器把不同 query 當成不同 URL,一定重抓。
+
+**規則**:**每次改 `css/style.css` 後,一定要同步把全站的版本號往前換一版**(慣例:日期+字母,如 `20260707b`→`20260708a`),否則改了 CSS 沒換版本,回訪者會繼續看到舊樣式。批次替換用 scratchpad 的一次性 python(regex `href="/css/style.css(\?v=[^"]*)?"` → 新版本),已驗證冪等(重跑不會疊加 `?v=?v=`)。
+
 ## 追蹤碼現況
 
 - StatCounter(project 13334396):全站隱形計數(`sc_invisible=1`),已移除公開的「查看訪客統計」連結。
