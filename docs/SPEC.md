@@ -173,6 +173,8 @@ russian→russian-blue, tuxedo→tuxedo-cat
 **已完成(續)**:
 - [x] 本機瀏覽器端對端測試:20 題作答 → 正確導向 wealth-squirrel、帶 `secondary=P8` → 雙核心組合區塊正確顯示「穩健資產家 × 實體經營家」;直接訪問結果頁(無 query string)時橫幅與組合區塊皆正確隱藏;確認貓測驗共用的 `js/play.js` 行為未受影響(無 regression)
 
+**2026-07-07 選項數改版(6→4)**:站長反映每題 6 個選項太多,改成每題 4 個。原設計每選項同時給 P1–P8 與 6 個維度軸加分(維度軸引擎本來就忽略),且 P7/P8 少當主選項(偏難測到)。**重設計:保留原 20 個題幹,改成「每選項只對應一種人格 +3」的乾淨計分,維度軸整個拿掉**。用平衡排程(scratchpad `wealth_schedule.py`)確保 8 種人格各出現在剛好 10 題→理論最高分都是 30、28 組配對全覆蓋、pairwise 落差僅 2、P7/P8 不再偏難。選項文字由工作流(draft×4 平行→整份 critique 查易混人格區隔→revise)產出,critique 抓到並修掉一個 P7 選項被誤認成 P8 的問題。組裝腳本 `build_wealth_data.py` 內建斷言(每選項人格須在排程內、每人格恰 10 次、最高分恰 30)。模擬 8 種人格各自「固定選它」皆正確測出;瀏覽器實測 20 題→導向 wealth-turtle+secondary=P7、雙核心區塊正常、零 console 錯誤。**雙核心機制不受影響**(仍只看 P1–P8)。
+
 **2026-07-07 插畫上線(第一批)**:
 - [x] 站長於 `Passive income/public/images/` 提供 5 張圖(hero.png + p1_squirrel/p2_beaver/p3_owl/p4_peacock),已搬進 `images/wealth/`,接上 `<img>` + `onerror` fallback(同 career-path Tier 5 那套邏輯):測驗介紹頁用新 class `.wealth-hero`,結果頁用 `.wealth-portrait`(16:9 橫幅,不是 career 的圓形頭像,因為插畫背景細節豐富,裁圓會裁掉大半場景)
 - [x] 8 個結果頁的 markup 統一先套用 img+fallback(即使圖還沒到,onerror 會自動退回 emoji),之後補圖不需要再改程式碼,直接把檔案放進 `images/wealth/` 即可
