@@ -181,9 +181,11 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - [x] 瀏覽器驗證:squirrel/beaver/owl/peacock 圖片正確顯示;bee(尚無圖)實測 `naturalWidth:0` 觸發 onerror,fallback emoji 正確浮現
 - [x] 詳細清單見 `docs/content-kit/image-manifest.md` Tier 6
 
-**待辦**:
-- [ ] (可選,卡在使用者)蜜蜂/螞蟻/火烈鳥/烏龜 4 張人格插畫 —— 圖沒放也不影響上線,fallback 會自動處理
-- [ ] og:image 是否要切到專屬插畫,待 8 張全部到齊後再評估(目前原圖 16:9 跟建議的 og 尺寸不完全一致)
+**2026-07-07 插畫補齊(第二批)+ og:image 切換**:
+- [x] 站長補上剩餘 4 張(p5_bee/p6_ant/p7_flamingo/p8_turtle)+ 更新版 hero.png,**8 人格插畫全數上線,Tier 6 完成**
+- [x] og:image / twitter:image / JSON-LD image 從全站預設圖切到專屬插畫:用 Pillow 從原圖(16:9,約 1725×910)置中裁切+縮放產生乾淨的 1200×630 版本,存到 `images/results/wealth-<slug>-og.png`(結果頁)與 `images/quizzes/wealth-engine-og.png`(測驗介紹頁),跟站內既有 og 圖路徑慣例一致;sitemap.xml 補上對應 `image:image`
+- [x] 瀏覽器重測:換題庫改版後(4 選項/單一人格計分)仍正確導向結果頁、雙核心組合區塊正常顯示(如「穩健資產家 × 數位工匠」)、插畫與新 og:image 皆正確載入、零 console 錯誤
+- [ ] 站長另上傳 `avatar_p1~p8.png`(方形頭像)、`analyzing.png`(過場圖)、`_contact_sheet.png`——目前架構沒有分享卡片產生器或過場動畫可以放這些圖,先保留在 `Passive income/public/images/` 不動,待之後想加相關功能再接
 
 ## CSS 快取破壞(cache-busting)慣例(2026-07-07 導入)
 

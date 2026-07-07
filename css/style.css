@@ -379,11 +379,42 @@ a.chip:hover, a.chip:active { border-color: var(--accent); transform: scale(0.98
 /* 廣告版位(通過審查後才會放進 <ins> 廣告單元) */
 .ad-slot { margin: 24px 0; text-align: center; }
 
-/* 星等/程度指標(隱藏財富引擎測驗用) */
-.rating-block { display: flex; flex-direction: column; gap: 8px; margin: 12px 0; }
-.rating-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.rating-label { font-size: 0.95rem; color: var(--cocoa-light); }
+/* 程度指標(財富引擎測驗):分段刻度條,包成一張小卡片 */
+.rating-block {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0;
+  background: var(--card);
+  border: 1.5px solid var(--bg-deep);
+  border-radius: 16px;
+  padding: 2px 18px;
+  box-shadow: var(--shadow);
+}
+.rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 13px 0;
+}
+.rating-row + .rating-row { border-top: 1px solid var(--bg-deep); }
+.rating-label { font-size: 0.98rem; font-weight: 700; color: var(--cocoa); }
+.rating-meter { display: inline-flex; gap: 5px; flex-shrink: 0; }
+.rating-meter i {
+  width: 22px;
+  height: 9px;
+  border-radius: 999px;
+  background: var(--bg-deep);
+  display: block;
+}
+.rating-meter i.on {
+  background: linear-gradient(90deg, var(--milk-tea), var(--accent));
+}
+/* 舊版純文字圓點(若還有頁面沒轉換,至少顏色一致) */
 .rating-dots { font-size: 1.1rem; letter-spacing: 2px; color: var(--milk-tea-dark); }
+@media (max-width: 380px) {
+  .rating-meter i { width: 18px; }
+}
 
 /* 主副型組合區塊 */
 .combo-box h3 { font-size: 1.05rem; color: var(--milk-tea-dark); margin-bottom: 6px; }

@@ -157,14 +157,18 @@
 
 | 檔名 | 用途 / 人格 | 動物 | 狀態 |
 |---|---|---|---|
-| `hero.png` | 測驗介紹頁主視覺 | — | ✅ 已上線 |
+| `hero.png` | 測驗介紹頁主視覺 | — | ✅ 已上線(2026-07-07 站長更新過一次新版) |
 | `p1_squirrel.png` | 穩健資產家 | 🐿️ 松鼠 | ✅ 已上線 |
 | `p2_beaver.png` | 數位工匠 | 🦫 河狸 | ✅ 已上線 |
 | `p3_owl.png` | 知識出版家 | 🦉 貓頭鷹 | ✅ 已上線 |
 | `p4_peacock.png` | 流量放大器 | 🦚 孔雀 | ✅ 已上線 |
-| `p5_bee.png` | 社群主理人 | 🐝 蜜蜂 | ⬜ 待補(目前顯示 emoji fallback) |
-| `p6_ant.png` | 系統建築師 | 🐜 螞蟻 | ⬜ 待補 |
-| `p7_flamingo.png` | 版權收藏家 | 🦩 火烈鳥 | ⬜ 待補 |
-| `p8_turtle.png` | 實體經營家 | 🐢 烏龜 | ⬜ 待補 |
+| `p5_bee.png` | 社群主理人 | 🐝 蜜蜂 | ✅ 已上線 |
+| `p6_ant.png` | 系統建築師 | 🐜 螞蟻 | ✅ 已上線 |
+| `p7_flamingo.png` | 版權收藏家 | 🦩 火烈鳥 | ✅ 已上線 |
+| `p8_turtle.png` | 實體經營家 | 🐢 烏龜 | ✅ 已上線 |
 
-og:image 暫時維持 `images/og-default.png`(尺寸 1200×630),尚未切到專屬插畫,因為原圖是 16:9 約 1672×941,跟建議的分享圖尺寸不完全一致;等 8 張全部到齊後再一次評估要不要裁切出專屬 og 版本。
+**Tier 6 全部完成(8/8 人格 + hero)。**
+
+**og:image 已切換(2026-07-07)**:8 個結果頁 + 測驗介紹頁的 og:image / twitter:image / JSON-LD image 都已從預設圖換成專屬圖。原插畫是 16:9(約 1725×910,比例 ≈1.90),跟建議的 1200×630(比例 ≈1.905)幾乎一致,所以用 Pillow 從中心點裁切+等比縮放產生乾淨的 1200×630 版本,存在 `images/results/wealth-<slug>-og.png` 與 `images/quizzes/wealth-engine-og.png`(跟站內其他測驗的 og 圖路徑慣例一致),已補進 sitemap.xml 的 `image:image`。
+
+**站長另外還上傳了幾個目前沒接的檔案**:`avatar_p1~p8.png`(1254×1254 方形頭像,ART_DIRECTION 原本設計給分享卡片用,但目前靜態站架構沒有做分享卡片產生器,先保留沒用)、`analyzing.png`(原 React 版設計的「分析中」過場圖,本站 play.js 沒有這個過場畫面,答完最後一題直接導向結果頁)、`_contact_sheet.png`(看起來是產圖時的預覽總覽圖)。這三種目前沒有對應的頁面元件可以放,先不動,如果之後想加分享卡片功能或過場動畫,這些圖已經在 `Passive income/public/images/` 準備好了。

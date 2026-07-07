@@ -20,7 +20,11 @@
     <image:image><image:loc>https://yumitw.github.io/images/quizzes/dog-personality-og.png</image:loc></image:image>
   </url>
   <url><loc>https://yumitw.github.io/quizzes/career-path/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/quizzes/wealth-engine/</loc><lastmod>2026-07-07</lastmod></url>
+  <url>
+    <loc>https://yumitw.github.io/quizzes/wealth-engine/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/quizzes/wealth-engine-og.png</image:loc></image:image>
+  </url>
   <url>
     <loc>https://yumitw.github.io/results/orange-cat/</loc>
     <lastmod>2026-07-07</lastmod>
@@ -138,14 +142,46 @@
   <url><loc>https://yumitw.github.io/results/career-commercial-design/</loc><lastmod>2026-07-07</lastmod></url>
   <url><loc>https://yumitw.github.io/results/career-multimedia/</loc><lastmod>2026-07-07</lastmod></url>
   <url><loc>https://yumitw.github.io/results/career-automation/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/wealth-squirrel/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/wealth-beaver/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/wealth-owl/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/wealth-peacock/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/wealth-bee/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/wealth-ant/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/wealth-flamingo/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/wealth-turtle/</loc><lastmod>2026-07-07</lastmod></url>
+  <url>
+    <loc>https://yumitw.github.io/results/wealth-squirrel/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/wealth-squirrel-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/wealth-beaver/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/wealth-beaver-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/wealth-owl/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/wealth-owl-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/wealth-peacock/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/wealth-peacock-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/wealth-bee/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/wealth-bee-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/wealth-ant/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/wealth-ant-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/wealth-flamingo/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/wealth-flamingo-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/wealth-turtle/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/wealth-turtle-og.png</image:loc></image:image>
+  </url>
   <url>
     <loc>https://yumitw.github.io/articles/</loc>
     <lastmod>2026-07-07</lastmod>
