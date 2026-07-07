@@ -97,9 +97,42 @@
       if (current < quiz.questions.length) {
         renderQuestion();
       } else {
-        finish(computeResult());
+        var result = computeResult();
+        if (cfg.analyzingSteps && cfg.analyzingSteps.length) {
+          showAnalyzing(result);
+        } else {
+          finish(result);
+        }
       }
     }, 320);
+  }
+
+  // 過場「分析中」畫面(僅供 cfg.analyzingSteps 的測驗用;不影響其他測驗)
+  function showAnalyzing(result) {
+    document.getElementById("screen-question").hidden = true;
+    var screen = document.getElementById("screen-analyzing");
+    screen.hidden = false;
+    window.scrollTo(0, 0);
+
+    var steps = cfg.analyzingSteps;
+    var textEl = document.getElementById("analyzing-text");
+    var i = 0;
+    textEl.textContent = steps[0];
+    textEl.classList.add("show");
+
+    var interval = setInterval(function () {
+      i++;
+      if (i >= steps.length) {
+        clearInterval(interval);
+        finish(result);
+        return;
+      }
+      textEl.classList.remove("show");
+      setTimeout(function () {
+        textEl.textContent = steps[i];
+        textEl.classList.add("show");
+      }, 150);
+    }, 700);
   }
 
   function computeResult() {
@@ -137,7 +170,15 @@
       var url = cfg.resultBase + slug + "/?from=quiz";
       if (cfg.includeSecondary) {
         var secondary = computeSecondary(type);
-        if (secondary) url += "&secondary=" + secondary;
+        if (secondary) {
+          url += "&secondary=" + secondary;
+          // 副型佔主型的百分比(主型永遠是分母,所以主型自己是 100%)
+          // 供分享卡片顯示「100% 主型 · XX% 副型」
+          var primaryScore = totals[type] || 0;
+          var secondaryScore = totals[secondary] || 0;
+          var spct = primaryScore ? Math.round((secondaryScore / primaryScore) * 100) : 0;
+          url += "&spct=" + spct;
+        }
       }
       location.replace(url);
       return;

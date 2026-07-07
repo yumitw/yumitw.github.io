@@ -19,7 +19,11 @@
     <lastmod>2026-07-07</lastmod>
     <image:image><image:loc>https://yumitw.github.io/images/quizzes/dog-personality-og.png</image:loc></image:image>
   </url>
-  <url><loc>https://yumitw.github.io/quizzes/career-path/</loc><lastmod>2026-07-07</lastmod></url>
+  <url>
+    <loc>https://yumitw.github.io/quizzes/career-path/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/quizzes/career-path-og.png</image:loc></image:image>
+  </url>
   <url>
     <loc>https://yumitw.github.io/quizzes/wealth-engine/</loc>
     <lastmod>2026-07-07</lastmod>
@@ -135,13 +139,41 @@
     <lastmod>2026-07-07</lastmod>
     <image:image><image:loc>https://yumitw.github.io/images/results/mix-breed-og.png</image:loc></image:image>
   </url>
-  <url><loc>https://yumitw.github.io/results/career-ai-data/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/career-web-dev/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/career-product-design/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/career-digital-marketing/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/career-commercial-design/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/career-multimedia/</loc><lastmod>2026-07-07</lastmod></url>
-  <url><loc>https://yumitw.github.io/results/career-automation/</loc><lastmod>2026-07-07</lastmod></url>
+  <url>
+    <loc>https://yumitw.github.io/results/career-ai-data/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/career-ai-data-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/career-web-dev/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/career-web-dev-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/career-product-design/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/career-product-design-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/career-digital-marketing/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/career-digital-marketing-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/career-commercial-design/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/career-commercial-design-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/career-multimedia/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/career-multimedia-og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yumitw.github.io/results/career-automation/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <image:image><image:loc>https://yumitw.github.io/images/results/career-automation-og.png</image:loc></image:image>
+  </url>
   <url>
     <loc>https://yumitw.github.io/results/wealth-squirrel/</loc>
     <lastmod>2026-07-07</lastmod>

@@ -153,7 +153,7 @@ russian→russian-blue, tuxedo→tuxedo-cat
 
 **待辦(卡在使用者)**:
 - [ ] **提供 7 個領域各自的實際課程連結網址**——2026-07-07 上線前先把 7 個結果頁的 CTA 按鈕暫時換成「🚧 課程連結準備中」文字(避免真人點到 `COURSE_LINK_PLACEHOLDER__<slug>` 死連結),等拿到真連結後我再把按鈕換回來
-- [ ] (選)7 隻動物插畫,規格見 `docs/content-kit/image-manifest.md` Tier 5 —— 圖沒放也不影響上線,fallback 會自動處理
+- [x] **2026-07-07 7 隻動物插畫全部上線**:站長把圖放進 `images/drafts/2026-07-07/career-path/`(10 張,含 2 張「wrong-animals」廢稿),我從中選出 7 隻正確動物 + 1 張總覽圖搬到正式路徑(`images/career/career_<slug>_<animal>.png`),onerror fallback 自動偵測顯示,沒改任何程式碼。總覽圖裁成 1200×630 存為 `images/quizzes/career-path-og.png`,接上測驗介紹頁 og:image 與首頁/測驗總覽的插畫橫幅(取代原本的 🧭 emoji 漸層底);7 個結果頁的 og:image 也從預設圖切到各自的動物插畫裁切版,sitemap.xml 補齊 8 處 `image:image`。詳見 `docs/content-kit/image-manifest.md` Tier 5。
 
 ## 第 4 個測驗:「你的隱藏財富引擎是什麼?」(2026-07-07 已上線)
 
@@ -185,7 +185,13 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - [x] 站長補上剩餘 4 張(p5_bee/p6_ant/p7_flamingo/p8_turtle)+ 更新版 hero.png,**8 人格插畫全數上線,Tier 6 完成**
 - [x] og:image / twitter:image / JSON-LD image 從全站預設圖切到專屬插畫:用 Pillow 從原圖(16:9,約 1725×910)置中裁切+縮放產生乾淨的 1200×630 版本,存到 `images/results/wealth-<slug>-og.png`(結果頁)與 `images/quizzes/wealth-engine-og.png`(測驗介紹頁),跟站內既有 og 圖路徑慣例一致;sitemap.xml 補上對應 `image:image`
 - [x] 瀏覽器重測:換題庫改版後(4 選項/單一人格計分)仍正確導向結果頁、雙核心組合區塊正常顯示(如「穩健資產家 × 數位工匠」)、插畫與新 og:image 皆正確載入、零 console 錯誤
-- [ ] 站長另上傳 `avatar_p1~p8.png`(方形頭像)、`analyzing.png`(過場圖)、`_contact_sheet.png`——目前架構沒有分享卡片產生器或過場動畫可以放這些圖,先保留在 `Passive income/public/images/` 不動,待之後想加相關功能再接
+- [x] 站長另上傳的 `avatar_p1~p8.png`(方形頭像)與 `analyzing.png`(過場圖)——已依站長要求接上「過場動畫」與「可截圖分享卡片」兩個功能,見下方 2026-07-07 條目。`_contact_sheet.png` 是產圖預覽總覽,無對應用途,不動。
+
+**2026-07-07 新增過場動畫 + 可截圖分享卡片**:
+- [x] **過場「分析中」畫面**:`js/play.js` 加法式擴充——答完最後一題後,若 `cfg.analyzingSteps` 有設定,先顯示新的 `#screen-analyzing` 畫面(`analyzing.png` + emoji fallback,同一套 onerror 邏輯),依序淡入淡出 4 句文字(每句 700ms,共 ~2.8 秒,字句沿用原 React 版 analyzingSteps),跑完才呼叫 `finish()` 導向結果頁。未設定 `cfg.analyzingSteps` 的測驗(貓/狗/career)完全不受影響,行為不變。
+- [x] **可截圖分享卡片**:`.share-card` 元件(方形頭像+人格名+百分比行+shareQuote+站名),放在 result-actions 之後、正文之前,構圖乾淨適合截圖到 IG/Threads。百分比行預設顯示「100% 主型」(直接訪問結果頁時);若從測驗作答完導向(帶 `secondary`/`spct` 參數),JS 會動態改成「100% 主型・XX% 副型」。`spct` 由 `play.js` 新增計算(`finish()` 內副型分數/主型分數,四捨五入,只在 `cfg.includeSecondary` 開啟時附加,同樣不影響其他測驗)。
+- [x] 8 個結果頁用**定向字串插入**(不是重新生成整份檔案)加上這兩塊,避免蓋掉稽核腳本/其他 session 對這幾份檔案做過的修改(例如星等已改成 `.rating-meter` 分段刻度條)。
+- [x] 瀏覽器實測:20 題作答(4 選項新題庫)→ 分析中畫面正確顯示 4 句文字 → 導向 wealth-squirrel 帶 `secondary=P2&spct=70` → 分享卡片正確顯示「100% 穩健資產家・70% 數位工匠」、頭像正確載入;直接訪問 wealth-turtle(無 query string)→ 分享卡片正確顯示「100% 實體經營家」、橫幅與雙核心區塊皆正確隱藏;手機寬度(375px)版面無溢出;零 console 錯誤。
 
 ## CSS 快取破壞(cache-busting)慣例(2026-07-07 導入)
 

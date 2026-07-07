@@ -464,6 +464,64 @@ a.chip:hover, a.chip:active { border-color: var(--accent); transform: scale(0.98
   line-height: 1;
 }
 
+/* 財富引擎測驗:過場「分析中」畫面(同一套 fallback 邏輯) */
+.analyzing-art { width: 220px; margin: 0 auto 20px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 16 / 9; }
+.analyzing-art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.analyzing-art-fallback {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-deep);
+  border: 3px solid var(--milk-tea);
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  line-height: 1;
+}
+.analyzing-text {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--milk-tea-dark);
+  font-weight: 700;
+  min-height: 1.6em;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.analyzing-text.show { opacity: 1; }
+
+/* 財富引擎測驗:可截圖分享卡片 */
+.share-card {
+  background: var(--card);
+  border: 2px solid var(--bg-deep);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+.share-card-avatar { width: 96px; height: 96px; margin: 0 auto 12px; border-radius: 50%; overflow: hidden; }
+.share-card-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.share-card-avatar-fallback {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--bg-deep);
+  border: 2px solid var(--milk-tea);
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  line-height: 1;
+}
+.share-card-name { font-size: 1.15rem; font-weight: 800; color: var(--cocoa); }
+.share-card-pct { font-size: 0.95rem; color: var(--milk-tea-dark); font-weight: 700; margin-top: 4px; }
+.share-card-quote { font-size: 0.92rem; color: var(--cocoa-light); font-style: italic; margin-top: 10px; }
+.share-card-brand {
+  font-size: 0.78rem;
+  color: var(--cocoa-light);
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--bg-deep);
+}
+
 /* 溫柔提醒盒(也要注意的地方) */
 .blindspot-box {
   background: var(--bg);

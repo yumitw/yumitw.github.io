@@ -63,6 +63,17 @@
       <a class="btn btn-secondary" href="/quizzes/wealth-engine/play/">再測一次 🔄</a>
     </div>
 
+    <div class="share-card" id="share-card">
+      <div class="share-card-avatar" aria-hidden="true">
+        <img src="/images/wealth/avatar_p4.png" alt="流量放大器" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="share-card-avatar-fallback" style="display:none;">🦚</div>
+      </div>
+      <div class="share-card-name">流量放大器</div>
+      <div class="share-card-pct" id="share-card-pct">100% 流量放大器</div>
+      <div class="share-card-quote">「你不是愛出風頭，你只是天生懂得讓好東西被看見。」</div>
+      <div class="share-card-brand">🐾 毛毛心理測驗所・隱藏財富引擎測驗</div>
+    </div>
+
     <article class="prose">
       <h2>為什麼你的財富引擎是流量放大器?</h2>
       <p>你很快就能看出什麼會吸引人，也擅長包裝、推薦與傳播。你不一定要自己做商品，也能靠影響消費決策賺錢。</p>
@@ -174,6 +185,11 @@
           });
           document.getElementById("combo-box").hidden = false;
         }
+      }
+      var spct = params.get("spct");
+      if (secondary && spct && window.WEALTH_PERSONAS && window.WEALTH_PERSONAS[secondary]) {
+        document.getElementById("share-card-pct").textContent =
+          "100% " + document.querySelector(".share-card-name").textContent + " · " + spct + "% " + window.WEALTH_PERSONAS[secondary].name;
       }
     })();
     document.getElementById("btn-share").addEventListener("click", function () {

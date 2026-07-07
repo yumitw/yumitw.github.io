@@ -137,17 +137,21 @@
 
 路徑統一 `images/career/<檔名>`,尺寸 16:9,風格延續貓貓狗狗的精緻厚塗半寫實動漫風、米色療癒場景、暖金光。
 
-| 檔名 | 領域 slug | 動物 |
-|---|---|---|
-| `career_ai-data_raccoon.png` | ai-data | 🦝 浣熊 |
-| `career_web-dev_dino.png` | web-dev | 🦕 小恐龍 |
-| `career_product-design_dolphin.png` | product-design | 🐬 海豚 |
-| `career_digital-marketing_fox.png` | digital-marketing | 🦊 狐狸 |
-| `career_commercial-design_chameleon.png` | commercial-design | 🦎 變色龍 |
-| `career_multimedia_otter.png` | multimedia | 🦦 水獺 |
-| `career_automation_octopus.png` | automation | 🐙 章魚 |
+| 檔名 | 領域 slug | 動物 | 狀態 |
+|---|---|---|---|
+| `career_ai-data_raccoon.png` | ai-data | 🦝 浣熊 | ✅ 已上線 |
+| `career_web-dev_dino.png` | web-dev | 🦕 小恐龍 | ✅ 已上線 |
+| `career_product-design_dolphin.png` | product-design | 🐬 海豚 | ✅ 已上線 |
+| `career_digital-marketing_fox.png` | digital-marketing | 🦊 狐狸 | ✅ 已上線 |
+| `career_commercial-design_chameleon.png` | commercial-design | 🦎 變色龍 | ✅ 已上線 |
+| `career_multimedia_otter.png` | multimedia | 🦦 水獺 | ✅ 已上線 |
+| `career_automation_octopus.png` | automation | 🐙 章魚 | ✅ 已上線 |
 
-放好後不用告訴我路徑,fallback 機制會自動偵測圖片存在就顯示、不存在就退回 emoji,不需要我再改程式碼。
+**Tier 5 全部完成(7/7)。** 2026-07-07 站長把圖放進 `images/drafts/2026-07-07/career-path/` 讓我審核挑選(共 10 張:8 張正確版 + 2 張「wrong-animals」草稿),我從中取正確的 7 隻動物 + 1 張總覽圖,搬到正式路徑,onerror fallback 自動偵測到就切換顯示,沒有動任何程式碼。
+
+**總覽圖**(`career-path-overview-draft-01.png`,7 隻動物聚在一起)已裁成 1200×630 存為 `images/quizzes/career-path-og.png`,接上測驗介紹頁 og:image/twitter:image,以及首頁/測驗總覽的 `.quiz-card-banner`(原本是 🧭 emoji 漸層底,現在跟貓狗測驗一樣用真實插畫橫幅)。
+
+**7 個結果頁 og:image 也已切換**:用同一套 Pillow 置中裁切邏輯,從 7 張動物插畫產生 `images/results/career-<slug>-og.png`,取代原本的預設圖;sitemap.xml 已補上對應 `image:image`(測驗介紹頁 + 7 個結果頁共 8 處)。
 
 ---
 
@@ -171,4 +175,4 @@
 
 **og:image 已切換(2026-07-07)**:8 個結果頁 + 測驗介紹頁的 og:image / twitter:image / JSON-LD image 都已從預設圖換成專屬圖。原插畫是 16:9(約 1725×910,比例 ≈1.90),跟建議的 1200×630(比例 ≈1.905)幾乎一致,所以用 Pillow 從中心點裁切+等比縮放產生乾淨的 1200×630 版本,存在 `images/results/wealth-<slug>-og.png` 與 `images/quizzes/wealth-engine-og.png`(跟站內其他測驗的 og 圖路徑慣例一致),已補進 sitemap.xml 的 `image:image`。
 
-**站長另外還上傳了幾個目前沒接的檔案**:`avatar_p1~p8.png`(1254×1254 方形頭像,ART_DIRECTION 原本設計給分享卡片用,但目前靜態站架構沒有做分享卡片產生器,先保留沒用)、`analyzing.png`(原 React 版設計的「分析中」過場圖,本站 play.js 沒有這個過場畫面,答完最後一題直接導向結果頁)、`_contact_sheet.png`(看起來是產圖時的預覽總覽圖)。這三種目前沒有對應的頁面元件可以放,先不動,如果之後想加分享卡片功能或過場動畫,這些圖已經在 `Passive income/public/images/` 準備好了。
+**2026-07-07 已接上**:`avatar_p1~p8.png`(1254×1254 方形頭像)用在結果頁新增的 `.share-card` 可截圖分享卡片;`analyzing.png` 用在答完測驗後的過場「分析中」畫面(`#screen-analyzing`)。都放在 `images/wealth/`,用同一套 `<img>` + `onerror` fallback 邏輯。`_contact_sheet.png` 是產圖時的預覽總覽圖,沒有對應頁面用途,留在 `Passive income/public/images/` 不動。

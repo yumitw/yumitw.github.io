@@ -63,6 +63,17 @@
       <a class="btn btn-secondary" href="/quizzes/wealth-engine/play/">再測一次 🔄</a>
     </div>
 
+    <div class="share-card" id="share-card">
+      <div class="share-card-avatar" aria-hidden="true">
+        <img src="/images/wealth/avatar_p2.png" alt="數位工匠" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="share-card-avatar-fallback" style="display:none;">🦫</div>
+      </div>
+      <div class="share-card-name">數位工匠</div>
+      <div class="share-card-pct" id="share-card-pct">100% 數位工匠</div>
+      <div class="share-card-quote">「你不是缺乏舞台，你更擅長讓作品替你說話。」</div>
+      <div class="share-card-brand">🐾 毛毛心理測驗所・隱藏財富引擎測驗</div>
+    </div>
+
     <article class="prose">
       <h2>為什麼你的財富引擎是數位工匠?</h2>
       <p>你喜歡把能力做成一個完整的作品，不一定想成為名人，但希望作品可以被一次做好、重複販售。</p>
@@ -174,6 +185,11 @@
           });
           document.getElementById("combo-box").hidden = false;
         }
+      }
+      var spct = params.get("spct");
+      if (secondary && spct && window.WEALTH_PERSONAS && window.WEALTH_PERSONAS[secondary]) {
+        document.getElementById("share-card-pct").textContent =
+          "100% " + document.querySelector(".share-card-name").textContent + " · " + spct + "% " + window.WEALTH_PERSONAS[secondary].name;
       }
     })();
     document.getElementById("btn-share").addEventListener("click", function () {

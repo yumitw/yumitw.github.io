@@ -29,6 +29,15 @@
       <a class="btn btn-ghost" href="../" style="margin-top:16px;">離開測驗</a>
     </section>
 
+    <!-- 過場「分析中」畫面(答完最後一題→顯示~2.8秒→導向結果頁) -->
+    <section id="screen-analyzing" class="screen" hidden>
+      <div class="analyzing-art" aria-hidden="true">
+        <img src="/images/wealth/analyzing.png" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="analyzing-art-fallback" style="display:none;">🔮</div>
+      </div>
+      <p class="analyzing-text" id="analyzing-text"></p>
+    </section>
+
     <!-- 過渡期備用結果畫面(正常不會用到,8 個結果頁從一開始就都在 readySlugs 裡) -->
     <section id="screen-result" class="screen" hidden>
       <p class="result-intro">你的測驗結果是……</p>
@@ -55,6 +64,12 @@
       quizUrl: "/quizzes/wealth-engine/",
       resultBase: "/results/",
       includeSecondary: true,
+      analyzingSteps: [
+        "正在分析你的資源使用方式",
+        "正在計算你的收入耐心值",
+        "正在尋找你的隱藏財富引擎",
+        "正在排除不適合你的賺錢陷阱"
+      ],
       slugs: {
         "P1": "wealth-squirrel",
         "P2": "wealth-beaver",
