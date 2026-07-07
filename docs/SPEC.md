@@ -174,6 +174,7 @@ russian→russian-blue, tuxedo→tuxedo-cat
 - [x] 數位工匠/河狸(wealth-beaver):Notion 模板、Canva 模板 2 個方法已掛連結
 - [x] 流量放大器/孔雀(wealth-peacock):SEO 部落格與商品評測 1 個方法已掛連結
 - [x] 社群主理人/蜜蜂(wealth-bee)、系統建築師/螞蟻(wealth-ant)、實體經營家/烏龜(wealth-turtle):3 個連結都問過站長,確認**當整頁通用 CTA**(不強塞進不match的清單項目)。螞蟻那個課程實際查到是「Github 免費架站術」,跟系統建築師清單的 5 個方法(Micro-SaaS/AI Agent/n8n/監控工具/LINE-Discord Bot)都對不太起來,所以通用 CTA 的寫法比逐條掛連結更合適。做法比照松鼠頁:`想更深入了解怎麼開始?` 區塊 + CTA 按鈕 + 推廣揭露文字。財富引擎測驗 8 頁中,已有 6 頁接上真實課程連結(松鼠/河狸/孔雀是方法逐條掛連結,蜜蜂/螞蟻/烏龜是整頁通用 CTA),剩貓頭鷹、火烈鳥 2 頁還沒有
+- [x] **2026-07-08 知識出版家/貓頭鷹(wealth-owl)接上課程連結**:Coursera「Self Publish Your Book on Amazon Kindle Direct Publishing」導覽專案,直接對應清單裡的「Amazon KDP 電子書／有聲書」項目,做法比照河狸/孔雀方法逐條掛連結。財富引擎測驗 8 頁中已有 7 頁接上真實課程連結,只剩火烈鳥(版權收藏家)
 
 **主副型雙核心機制**:原始設計是取分數最高(主型)與次高(副型)人格,兩者組合成「雙核心」建議。為了不破壞既有 `js/play.js` 共用引擎(貓/狗/career 三個測驗都在用),用**加法式**擴充:新增 `computeSecondary()` 與 `cfg.includeSecondary` 開關(預設不啟用,舊測驗行為不受影響),啟用時導向結果頁網址會多帶 `&secondary=Px`;結果頁用新檔 `js/wealth-data.js`(含 8 手寫組合 + 其餘自動合成邏輯,port 自 combinations.js)在偵測到 `secondary` 參數時,才動態補上頁面上原本 `hidden` 的「雙核心組合」區塊。靜態頁本身(無 query string 時)仍是完整可索引的單一人格內容,不影響 SEO。
 
