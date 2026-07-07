@@ -1,1 +1,5 @@
 .claude/
+
+# 圖片草稿/工作區:只留本機,不進版控、不上線。
+# 定版的圖再手動放到正式路徑(如 images/articles/<slug>/og.png)。
+images/drafts/
